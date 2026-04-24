@@ -1,29 +1,29 @@
-// ========== СПОСОБ 1: Самый правильный и современный ==========
-// Ждём полной загрузки HTML перед тем, как искать кнопки
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Находим кнопки по их ID
     const newsButton = document.getElementById('but_news');
     const treeButton = document.getElementById('but_tree');
     const prisesButton = document.getElementById('but_prises');
 
-    // Добавляем слушатели событий
-    newsButton.addEventListener('click', function() {
-        console.log('Нажата кнопка НОВОСТИ');
-        alert('Вы открыли новости!');
-        // Здесь можно добавить свой код
-    });
+    // Переход на страницу новостей
+    if (newsButton) {
+        newsButton.addEventListener('click', function() {
+            window.location.href = 'news.html';
+        });
+    }
 
-    treeButton.addEventListener('click', function() {
-        console.log('Нажата кнопка ДЕРЕВЬЯ');
-        alert('Вы открыли деревья!');
-        // Здесь можно добавить свой код
-    });
+    // Деревья — оставляем на главной (или может быть своя страница)
+    if (treeButton) {
+        treeButton.addEventListener('click', function() {
+            // Показываем "Секция в разработке"
+            alert('🌳 Секция "Деревья" в разработке');
+        });
+    }
 
-    prisesButton.addEventListener('click', function() {
-        console.log('Нажата кнопка ЦЕНЫ');
-        alert('Вы открыли цены!');
-        // Здесь можно добавить свой код
-    });
+    // Переход на страницу цен
+    if (prisesButton) {
+        prisesButton.addEventListener('click', function() {
+            window.location.href = 'prices.html';
+        });
+    }
 
 });
