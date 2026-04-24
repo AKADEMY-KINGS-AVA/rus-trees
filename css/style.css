@@ -1,3 +1,7 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 #but_tree {
     background-color: black;
     border-radius: 13px;
@@ -77,5 +81,13 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+}
+
+.develop-section{
+    display: flex;
+    justify-content: center;  /* горизонтально */
+    align-items: center;      /* вертикально */
+    min-height: 100vh;
+    margin: 0;
 }
 
