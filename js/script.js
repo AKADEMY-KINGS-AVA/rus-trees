@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Переход на страницу новостей
     if (newsButton) {
         newsButton.addEventListener('click', function() {
-            window.location.href = 'pages/news.html';
+            window.location.href = 'news.html';
         });
     }
 
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Переход на страницу цен
     if (prisesButton) {
         prisesButton.addEventListener('click', function() {
-            window.location.href = 'pages/prices.html';
+            window.location.href = 'prices.html';
         });
     }
 
