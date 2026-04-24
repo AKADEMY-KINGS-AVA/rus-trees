@@ -1,6 +1,11 @@
 // js/script.js
 document.addEventListener('DOMContentLoaded', function() {
 
+    // Проверяем, есть ли уже кнопки на странице (чтобы не создавать дубликаты)
+    if (document.querySelector('.buttons')) {
+        return; // Кнопки уже есть, ничего не делаем
+    }
+
     // СОЗДАЁМ КНОПКИ АВТОМАТИЧЕСКИ
     const buttonsHTML = `
         <div class="buttons">
@@ -16,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     `;
 
-    // Вставляем кнопки в начало body или в нужное место
+    // Вставляем кнопки в начало body
     document.body.insertAdjacentHTML('afterbegin', buttonsHTML);
 
     // Теперь добавляем обработчики на кнопки
@@ -32,7 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (treeButton) {
         treeButton.addEventListener('click', function() {
-            alert('Вы на главной странице');
+            // Если мы уже на главной - показываем сообщение
+            if (window.location.pathname.includes('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/rus-trees/')) {
+                alert('🌳 Вы уже на главной странице');
+            } else {
+                window.location.href = 'index.html';
+            }
         });
     }
 
