@@ -40,13 +40,13 @@ html {
   height: 100%;
 }
 
-body { 
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   background-color: white;
 }
-    
+
 span {
   word-break: break-word;
 }
@@ -2143,6 +2143,47 @@ span {
 
 
   </style>
+
+  <style>
+    /* ── Viewport fit patch ─────────────────────────── */
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;   /* outer scroll disabled */
+    }
+    .scale-root {
+      width: 1920px;
+      transform-origin: top left;
+      /* JS sets the actual scale value */
+    }
+    /* Make the inner scroll container fill the visible viewport */
+    .scroll-container {
+      height: 100vh !important;
+      overflow-y: auto !important;
+      overflow-x: hidden !important;
+    }
+    /* ─────────────────────────────────────────────── */
+  </style>
+  <script>
+    (function () {
+      function applyScale() {
+        var root = document.querySelector('.Pixso-canvas-0_1');
+        if (!root) return;
+        var designWidth = 1920;
+        var scale = window.innerWidth / designWidth;
+        root.style.width = designWidth + 'px';
+        root.style.transform = 'scale(' + scale + ')';
+        root.style.transformOrigin = 'top left';
+        // Shrink wrapper height so there's no dead space below
+        var wrapper = root.parentElement;
+        if (wrapper) {
+          wrapper.style.height = (root.scrollHeight * scale) + 'px';
+        }
+      }
+      document.addEventListener('DOMContentLoaded', applyScale);
+      window.addEventListener('resize', applyScale);
+    })();
+  </script>
 </head>
 <body>
 <div class="scroll-container">
