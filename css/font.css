@@ -1,12 +1,12 @@
 
 @font-face {
-  font-family: 'Montserrat-SemiBold';
+  font-family: 'Montserrat-Medium';
   font-style: normal;
-  font-weight: 600;
-  src: url(../font/Montserrat-SemiBold_1.ttf) format(truetype);
+  font-weight: 500;
+  src: url(../font/Montserrat-Medium_1.ttf) format(truetype);
 }
 
-		
+
 @font-face {
   font-family: 'Montserrat-Bold';
   font-style: normal;
@@ -14,15 +14,7 @@
   src: url(../font/Montserrat-Bold_1.ttf) format(truetype);
 }
 
-		
-@font-face {
-  font-family: 'Montserrat-Medium';
-  font-style: normal;
-  font-weight: 500;
-  src: url(../font/Montserrat-Medium_1.ttf) format(truetype);
-}
 
-		
 @font-face {
   font-family: 'Montserrat-Regular';
   font-style: normal;
@@ -30,28 +22,20 @@
   src: url(../font/Montserrat-Regular_1.ttf) format(truetype);
 }
 
-		
+
 @font-face {
-  font-family: 'Montserrat-Light';
+  font-family: 'Montserrat-SemiBold';
   font-style: normal;
-  font-weight: 300;
-  src: url(../font/Montserrat-Light_1.ttf) format(truetype);
+  font-weight: 600;
+  src: url(../font/Montserrat-SemiBold_1.ttf) format(truetype);
 }
 
-		
+
 @font-face {
-  font-family: 'Inter-Bold';
+  font-family: 'Inter-Light';
   font-style: normal;
   font-weight: 100 900;
   src: url(../font/Inter_1.ttf) format(truetype);
-}
-
-		
-@font-face {
-  font-family: 'Montserrat-ExtraBold';
-  font-style: normal;
-  font-weight: 800;
-  src: url(../font/Montserrat-ExtraBold_1.ttf) format(truetype);
 }
 
 		

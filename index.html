@@ -1,2450 +1,273 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+﻿<!DOCTYPE html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixso HTML</title>
+  <title>Русские Деревья</title>
   <link rel="stylesheet" href="css/font.css">
   <script src="js/animation.js"></script>
-  <style>
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-ol,ul,menu {
-  padding-inline-start: 0;
-  list-style: none;
-}
-
-ol li::marker, ul li::before {
-  letter-spacing: 0;
-}
-
-.scroll-container > div {
-  width: 100%;
-}
-
-.container > div {
-  width: 100%;
-}
-
-.Pixso-canvas-0_1 > div {
-  width: 100%;
-}
-
-html {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: white;
-}
-
-span {
-  word-break: break-word;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-}
-
-.scroll-container {
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
-
-.Pixso-canvas-0_1 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-frame-66_60 {
-  width: 100%;
-  height: 3865px;
-  overflow: hidden;
-  position: relative;
-  flex-shrink: 0;
-  background-color: rgba(9, 9, 9, 1);
-}
-
-.Pixso-group-66_75 {
-  width: 5151.61572265625px;
-  height: 5363.40185546875px;
-  position: absolute;
-  left: -1531px;
-  top: 182px;
-}
-
-.Pixso-vector-66_76 {
-  position: absolute;
-  inset: -101.14155251141553% -101.14155251141553% -101.14155251141553% -101.14155251141553% ;
-  background-image: url(./image/Ellipse_66_76.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.vector-wrapper-66_76 {
-  position: absolute;
-  left: 3351px;
-  top: 1245px;
-  width: 876px;
-  height: 876px;
-}
-
-.Pixso-vector-66_77 {
-  position: absolute;
-  inset: -94.63470319634703% -94.63470319634703% -94.63470319634703% -94.63468926137986% ;
-  background-image: url(./image/Ellipse_66_77.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.vector-wrapper-66_77 {
-  position: absolute;
-  left: 780.9998779296875px;
-  top: 1944px;
-  width: 876px;
-  height: 876px;
-}
-
-.Pixso-vector-66_78 {
-  position: absolute;
-  inset: -135.70432357043236% -135.70432357043236% -135.70432357043236% -135.70432357043236% ;
-  background-image: url(./image/Ellipse_66_78.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.vector-wrapper-66_78 {
-  position: absolute;
-  left: 2167px;
-  top: 10px;
-  width: 717px;
-  height: 717px;
-}
-
-.Pixso-vector-66_79 {
-  position: absolute;
-  inset: -81.83306055646482% -81.83306055646482% -81.83306055646482% -81.83306055646482% ;
-  background-image: url(./image/Ellipse_66_79.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.vector-wrapper-66_79 {
-  position: absolute;
-  left: 2228px;
-  top: 0px;
-  width: 611px;
-  height: 611px;
-}
-
-.Pixso-vector-66_80 {
-  position: absolute;
-  inset: -80.67796610169492% -80.67796610169492% -80.67796610169492% -80.67796610169492% ;
-  background-image: url(./image/Ellipse_66_80.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.vector-wrapper-66_80 {
-  position: absolute;
-  left: 2368px;
-  top: 160px;
-  width: 295px;
-  height: 295px;
-}
-
-.Pixso-vector-66_81 {
-  position: absolute;
-  inset: -15.593220338983052% -15.593220338983052% -15.593220338983052% -15.593220338983052% ;
-  background-image: url(./image/Ellipse_66_81.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.vector-wrapper-66_81 {
-  position: absolute;
-  left: 2073px;
-  top: 471px;
-  width: 295px;
-  height: 295px;
-}
-
-.Pixso-vector-66_218 {
-  position: absolute;
-  inset: -3.394930548459069% -2.159610416467326% -3.392388346457082% -2.063496107675952% ;
-  background-image: url(./image/Vector_66_218.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.vector-wrapper-66_218 {
-  position: absolute;
-  left: 1911.5000450348025px;
-  top: 1218.2822079544483px;
-  width: 1367.4998779296875px;
-  height: 1150.957275390625px;
-}
-
-.Pixso-vector-66_210 {
-  position: absolute;
-  inset: -16.314531365097253% -1.1669366354603958% -15.415346479472717% -5.009597728822541% ;
-  background-image: url(./image/Group_66_210.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.vector-wrapper-66_210 {
-  position: absolute;
-  left: 2617.233296287216px;
-  top: 2513.801987552474px;
-  width: 2505.14892578125px;
-  height: 2369.927490234375px;
-}
-
-.Pixso-vector-66_214 {
-  position: absolute;
-  inset: -10.745464729090285% -12.017926710743378% -11.459612562508877% -4.662297238882594% ;
-  background-image: url(./image/Group_66_214.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.vector-wrapper-66_214 {
-  position: absolute;
-  left: 99.92172610633042px;
-  top: 3117.9719505396056px;
-  width: 2143.1865234375px;
-  height: 2263.4580078125px;
-}
-
-.Pixso-group-66_244 {
-  width: 2060px;
-  height: 474.0054626464844px;
-  position: absolute;
-  left: -14px;
-  top: 3262px;
-}
-
-.Pixso-vector-66_227 {
-  width: 2060.00390625px;
-  height: 6.005462646484375px;
-  background-image: url(./image/Line_66_227.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0px;
-  top: -0.000091552734375px;
-}
-
-.Pixso-paragraph-66_228 {
-  font-size: 36px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 546px;
-  top: 26.00546646118164px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_229 {
-  font-size: 36px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 547px;
-  top: 142.00546264648438px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_230 {
-  font-size: 36px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 546px;
-  top: 92.00546264648438px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_231 {
-  font-size: 36px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 546px;
-  top: 192.00546264648438px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_232 {
-  font-size: 36px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 1665px;
-  top: 26.00546646118164px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_233 {
-  font-size: 18px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 147px;
-  top: 452.0054626464844px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_224 {
-  font-size: 24px;
-  font-family: "Inter-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: 1511px;
-  height: auto;
-  position: absolute;
-  left: 145px;
-  top: 199.00546264648438px;
-}
-
-.Pixso-paragraph-66_225 {
-  font-size: 24px;
-  font-family: "Inter-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 145px;
-  top: 257.0054626464844px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_226 {
-  font-size: 24px;
-  font-family: "Inter-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 145px;
-  top: 228.00546264648438px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_222 {
-  font-size: 24px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 223px;
-  top: 33.00546646118164px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_223 {
-  font-size: 36px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 145px;
-  top: 148.00546264648438px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-rectangle-66_220 {
-  width: 78px;
-  height: 72px;
-  position: absolute;
-  left: 140px;
-  top: 2.00537109375px;
-  transform: rotateY(180deg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(./image/46ad3fdcf2bd15b195d9e76bb3a84d88012de6f5.png);
-}
-
-.Pixso-group-66_152 {
-  width: 1848px;
-  height: 810px;
-  position: absolute;
-  left: 72px;
-  top: 2192px;
-}
-
-.Pixso-group-66_153 {
-  width: 999px;
-  height: 356px;
-  position: absolute;
-  left: 0px;
-  top: 136px;
-}
-
-.Pixso-group-66_154 {
-  width: 999px;
-  height: 356px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.Pixso-paragraph-66_155 {
-  font-size: 36px;
-  font-family: "Inter-Light";
-  font-weight: 300;
-  color: rgba(255, 255, 255, 1);
-  width: 622px;
-  height: auto;
-  position: absolute;
-  left: 0px;
-  top: 136px;
-}
-
-.Pixso-paragraph-66_156 {
-  font-size: 72px;
-  font-family: "Inter-Extra Bold";
-  font-weight: 800;
-  color: rgba(255, 255, 255, 1);
-  width: 999px;
-  height: auto;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.Pixso-group-66_157 {
-  width: 1633px;
-  height: 55px;
-  position: absolute;
-  left: 82px;
-  top: 0px;
-}
-
-.Pixso-group-66_158 {
-  width: 1633px;
-  height: 55px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.Pixso-paragraph-66_159 {
-  font-size: 45px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 409px;
-  top: 0px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_160 {
-  font-size: 45px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 682px;
-  top: 0px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_161 {
-  font-size: 45px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 183px;
-  top: 0px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_162 {
-  font-size: 45px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: transparent;
-  background-clip: text;
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  white-space: pre;
-  flex-grow: 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  background-image: url("data:image/svg+xml;utf8,%3Csvg%20viewBox%3D'0%200%20126%2055'%20preserveAspectRatio%3D'none'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D'grad'%20gradientUnits%3D'objectBoundingBox'%20x1%3D'0'%20y1%3D'0.5'%20x2%3D'1'%20y2%3D'0.5'%20gradientTransform%3D'matrix(-0.7500%2C%200.0000%2C%20-0.0000%2C%20-4.0833%2C%200.7500%2C%202.5417)'%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20stop-color%3D'rgba(255%2C255%2C255%2C1)'%20offset%3D'0'%2F%3E%3Cstop%20stop-color%3D'rgba(255%2C255%2C255%2C0)'%20offset%3D'1'%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23grad)'%2F%3E%0A%20%20%20%20%3C%2Fsvg%3E");
-}
-
-.Pixso-paragraph-66_163 {
-  font-size: 45px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: transparent;
-  background-clip: text;
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 1444px;
-  top: 0px;
-  white-space: pre;
-  flex-grow: 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  background-image: url("data:image/svg+xml;utf8,%3Csvg%20viewBox%3D'0%200%20189%2055'%20preserveAspectRatio%3D'none'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D'grad'%20gradientUnits%3D'objectBoundingBox'%20x1%3D'0'%20y1%3D'0.5'%20x2%3D'1'%20y2%3D'0.5'%20gradientTransform%3D'matrix(0.7471%2C%200.0000%2C%20-0.0000%2C%209.8177%2C%200.2931%2C%20-4.4089)'%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20stop-color%3D'rgba(255%2C255%2C255%2C1)'%20offset%3D'0'%2F%3E%3Cstop%20stop-color%3D'rgba(255%2C255%2C255%2C0)'%20offset%3D'1'%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23grad)'%2F%3E%0A%20%20%20%20%3C%2Fsvg%3E");
-}
-
-.Pixso-paragraph-66_164 {
-  font-size: 45px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 851px;
-  top: 0px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_165 {
-  font-size: 45px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 1083px;
-  top: 0px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-rectangle-66_168 {
-  width: 1149px;
-  height: 101px;
-  position: absolute;
-  left: 699px;
-  top: 136px;
-  border-radius: 40px 0px 0px 40px;
-  background-color: rgba(196, 196, 196, 0.05000000074505806);
-}
-
-.Pixso-paragraph-66_221 {
-  font-size: 24px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 837px;
-  top: 169px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-rectangle-66_219 {
-  width: 78px;
-  height: 72px;
-  position: absolute;
-  left: 729px;
-  top: 136px;
-  transform: rotateY(180deg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(./image/46ad3fdcf2bd15b195d9e76bb3a84d88012de6f5.png);
-}
-
-.Pixso-group-77_4 {
-  width: 1026px;
-  height: 240px;
-  position: absolute;
-  left: 816px;
-  top: 148px;
-}
-
-.Pixso-group-77_43 {
-  width: 298px;
-  height: 71px;
-  position: absolute;
-  left: 0px;
-  top: 144px;
-}
-
-.Pixso-rectangle-77_42 {
-  width: 298px;
-  height: 71px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 17px 17px 17px 17px;
-  background-color: rgba(196, 196, 196, 0.10000000149011612);
-}
-
-.Pixso-text-77_1 {
-  font-size: 30px;
-  font-family: "Inter-Regular";
-  font-weight: Regular;
-  color: rgba(255, 255, 255, 1);
-  width: 271px;
-  height: 38px;
-  position: absolute;
-  left: 25px;
-  top: 17px;
-}
-
-.Pixso-paragraph-77_1_0 {
-  line-height: 36.30681610107422px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-77_1_0_1 {
-  font-size: 30px;
-  font-family: "Inter-Regular";
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-77_1_0_2 {
-  font-size: 30px;
-  font-family: "Inter-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-group-77_17 {
-  width: 662px;
-  height: 122px;
-  position: absolute;
-  left: 364px;
-  top: 118px;
-}
-
-.Pixso-group-77_20 {
-  width: 200px;
-  height: 120px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.Pixso-rectangle-77_15 {
-  width: 196px;
-  height: 55px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 17px 17px 17px 17px;
-  background-color: rgba(196, 196, 196, 0.10000000149011612);
-}
-
-.Pixso-paragraph-77_16 {
-  font-size: 24px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: 109px;
-  height: auto;
-  position: absolute;
-  left: 48px;
-  top: 13px;
-}
-
-.Pixso-paragraph-77_28 {
-  font-size: 30px;
-  font-family: "Inter-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: 196px;
-  height: 47px;
-  position: absolute;
-  left: 4px;
-  top: 73px;
-}
-
-.Pixso-group-77_21 {
-  width: 200px;
-  height: 120px;
-  position: absolute;
-  left: 226px;
-  top: 0px;
-}
-
-.Pixso-paragraph-77_23 {
-  font-size: 24px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 50%;
-  top: 13px;
-  transform: translateX(calc(-50% + 0px));
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-77_31 {
-  font-size: 30px;
-  font-family: "Inter-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: 200px;
-  height: 47px;
-  position: absolute;
-  left: 0px;
-  top: 73px;
-}
-
-.Pixso-rectangle-77_29 {
-  width: 200px;
-  height: 55px;
-  position: absolute;
-  left: 50%;
-  top: 0px;
-  transform: translateX(calc(-50% + 0px));
-  border-radius: 17px 17px 17px 17px;
-  background-color: rgba(196, 196, 196, 0.10000000149011612);
-}
-
-.Pixso-group-77_32 {
-  width: 210px;
-  height: 122px;
-  position: absolute;
-  left: 452px;
-  top: 0px;
-}
-
-.Pixso-paragraph-77_33 {
-  font-size: 24px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 50%;
-  top: 13px;
-  transform: translateX(calc(-50% + -4.5px));
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-rectangle-77_34 {
-  width: 200px;
-  height: 55px;
-  position: absolute;
-  left: 50%;
-  top: 0px;
-  transform: translateX(calc(-50% + -5px));
-  border-radius: 17px 17px 17px 17px;
-  background-color: rgba(196, 196, 196, 0.10000000149011612);
-}
-
-.Pixso-paragraph-77_35 {
-  font-size: 30px;
-  font-family: "Inter-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: 200px;
-  height: 47px;
-  position: absolute;
-  left: 10px;
-  top: 75px;
-}
-
-.Pixso-paragraph-66_176 {
-  font-size: 59px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 469px;
-  top: 0px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-text-66_181 {
-  font-size: 36px;
-  font-family: "Inter-Medium";
-  font-weight: Medium;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  width: 961px;
-  height: auto;
-  position: absolute;
-  left: 383px;
-  top: 634px;
-  opacity: 0.4099999964237213;
-}
-
-.Pixso-paragraph-66_181_0 {
-  line-height: 43.56818389892578px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_181_0_1 {
-  font-size: 36px;
-  font-family: "Inter-Light";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_181_0_2 {
-  font-size: 36px;
-  font-family: "Inter-Bold";
-  font-weight: 300;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_181_0_3 {
-  font-size: 36px;
-  font-family: "Inter-Light";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-paragraph-66_181_1 {
-  line-height: 43.56818389892578px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-group-66_177 {
-  width: 1949px;
-  height: 981px;
-  position: absolute;
-  left: -14px;
-  top: 1102px;
-}
-
-.Pixso-group-66_178 {
-  width: 960px;
-  height: 474px;
-  position: absolute;
-  left: 86px;
-  top: 30px;
-}
-
-.Pixso-paragraph-66_179 {
-  font-size: 60px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 286px;
-  top: 0px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-text-66_180 {
-  font-size: 36px;
-  font-family: "Inter-Light";
-  font-weight: Light;
-  color: rgba(255, 255, 255, 1);
-  width: 960px;
-  height: auto;
-  position: absolute;
-  left: 0px;
-  top: 254px;
-}
-
-.Pixso-paragraph-66_180_0 {
-  line-height: 43.56818389892578px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_180_0_1 {
-  font-size: 36px;
-  font-family: "Inter-Light";
-  font-weight: 300;
-  color: rgba(255, 255, 255, 1);
-  white-space: pre-wrap;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-paragraph-66_180_1 {
-  line-height: 43.56818389892578px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_180_1_1 {
-  font-size: 36px;
-  font-family: "Inter-Light";
-  font-weight: 300;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-paragraph-66_180_2 {
-  line-height: 43.56818389892578px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_180_2_1 {
-  font-size: 36px;
-  font-family: "Inter-Light";
-  font-weight: 300;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-paragraph-66_180_3 {
-  line-height: 43.56818389892578px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_180_3_1 {
-  font-size: 36px;
-  font-family: "Inter-Light";
-  font-weight: 300;
-  color: rgba(255, 255, 255, 1);
-  white-space: pre-wrap;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-paragraph-66_180_4 {
-  line-height: 43.56818389892578px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_180_4_1 {
-  font-size: 36px;
-  font-family: "Inter-Light";
-  font-weight: 300;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-rectangle-66_183 {
-  width: 959px;
-  height: 134px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px 40px 40px 0px;
-  background-color: rgba(196, 196, 196, 0.05000000074505806);
-}
-
-.Pixso-vector-66_236 {
-  width: 1124px;
-  height: 771px;
-  background-image: url(./image/Vector_66_236.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 15px;
-  top: 210px;
-}
-
-.Pixso-text-66_184 {
-  font-size: 60px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: SemiBold;
-  color: rgba(255, 255, 255, 1);
-  width: 765px;
-  height: auto;
-  position: absolute;
-  left: 1059px;
-  top: 30px;
-}
-
-.Pixso-paragraph-66_184_0 {
-  line-height: 73.13999938964844px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_184_0_1 {
-  font-size: 60px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_184_0_2 {
-  font-size: 60px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-span-66_184_0_3 {
-  font-size: 60px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.Pixso-rectangle-66_234 {
-  width: 787px;
-  height: 771px;
-  position: absolute;
-  left: 1162px;
-  top: 210px;
-  border-radius: 30px 30px 30px 30px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(./image/918bb360aaa4881b71584ae9d96f592a1cf0de2f.png);
-}
-
-.Pixso-group-66_256 {
-  width: 1085.6083984375px;
-  height: 232.61289978027344px;
-  position: absolute;
-  left: 138.39154052734375px;
-  top: 652.3870849609375px;
-}
-
-.Pixso-group-66_255 {
-  width: 188.26602172851562px;
-  height: 232.61289978027344px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.Pixso-vector-66_253 {
-  width: 188.26605224609375px;
-  height: 232.6129150390625px;
-  background-image: url(./image/Vector_66_253.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.Pixso-paragraph-66_254 {
-  font-size: 103px;
-  font-family: "Montserrat-ExtraBold";
-  font-weight: 800;
-  text-align: center;
-  color: rgba(0, 0, 0, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 46.60845947265625px;
-  top: 85.613037109375px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_258 {
-  font-size: 60px;
-  font-family: "Montserrat-Light";
-  font-weight: 300;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  width: 832px;
-  height: auto;
-  position: absolute;
-  left: 253.60845947265625px;
-  top: 93.6129150390625px;
-}
-
-.Pixso-group-66_185 {
-  width: 1774px;
-  height: 73px;
-  position: absolute;
-  left: 68px;
-  top: 38px;
-}
-
-.Pixso-group-66_186 {
-  width: 190px;
-  height: 65px;
-  position: absolute;
-  left: 1584px;
-  top: 4px;
-}
-
-.Pixso-rectangle-66_187 {
-  width: 190px;
-  height: 65px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 69px 69px 69px 69px;
-  background-color: rgba(14, 15, 13, 0);
-}
-
-.Pixso-paragraph-66_188 {
-  font-size: 20px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 77px;
-  top: 21px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-vector-66_189 {
-  width: 24px;
-  height: 36.5px;
-  background-image: url(./image/Group_66_189.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 31px;
-  top: 15px;
-}
-
-.Pixso-group-66_192 {
-  width: 517px;
-  height: 65px;
-  position: absolute;
-  left: 632px;
-  top: 0px;
-}
-
-.Pixso-rectangle-66_193 {
-  width: 517px;
-  height: 65px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 69px 69px 69px 69px;
-  background-color: rgba(14, 15, 13, 0);
-}
-
-.Pixso-paragraph-66_194 {
-  font-size: 20px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 371px;
-  top: 21px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_195 {
-  font-size: 20px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 51px;
-  top: 19px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-66_196 {
-  font-size: 20px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 219px;
-  top: 21px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-group-66_197 {
-  width: 126px;
-  height: 73px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.Pixso-vector-66_242 {
-  width: 33.1153564453125px;
-  height: 33.60009765625px;
-  background-image: url(./image/Vector_66_242.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 83.19230651855469px;
-  top: 20.599998474121094px;
-}
-
-.Pixso-rectangle-66_243 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 71px 71px 71px 71px;
-  background-color: rgba(55, 55, 55, 0.20000000298023224);
-}
-
-.stroke-wrapper-66_243 {
-  position: absolute;
-  left: 0px;
-  top: 11px;
-  width: 126px;
-  height: 52px;
-}
-
-.stroke-66_243 {
-  position: absolute;
-  inset: 0px;
-  border-radius: 71px 71px 71px 71px;
-  pointer-events: none;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  box-sizing: border-box;
-  border-color: rgba(255, 255, 255, 1);
-}
-
-.Pixso-rectangle-66_199 {
-  width: 54px;
-  height: 73px;
-  position: absolute;
-  left: 72px;
-  top: 0px;
-  border-radius: 71px 71px 71px 71px;
-  background-color: rgba(55, 55, 55, 0.20000000298023224);
-}
-
-.Pixso-group-77_52 {
-  width: 1852px;
-  height: 925px;
-  position: absolute;
-  left: 8px;
-  top: 69px;
-}
-
-.Pixso-group-77_53 {
-  width: 1047px;
-  height: 296px;
-  position: absolute;
-  left: 805px;
-  top: 113px;
-}
-
-.Pixso-paragraph-77_54 {
-  font-size: 110px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-77_55 {
-  font-size: 64px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 86px;
-  top: 136px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-77_56 {
-  font-size: 72px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 322px;
-  top: 208px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-group-77_57 {
-  width: 961px;
-  height: 458px;
-  position: absolute;
-  left: 873px;
-  top: 467px;
-}
-
-.Pixso-vector-77_58 {
-  position: absolute;
-  inset: 0% 0% 0% 0% ;
-  background-image: url(./image/Vector_77_58.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.vector-wrapper-77_58 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 961px;
-  height: 458px;
-}
-
-.Pixso-group-77_59 {
-  width: 314px;
-  height: 51px;
-  position: absolute;
-  left: 32px;
-  top: 172px;
-}
-
-.Pixso-rectangle-77_61 {
-  width: 235px;
-  height: 51px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 13px 13px 13px 13px;
-  background-color: rgba(107, 107, 107, 0.10999999940395355);
-}
-
-.Pixso-paragraph-77_62 {
-  font-size: 16px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: 287px;
-  height: 32px;
-  position: absolute;
-  left: 27px;
-  top: 16px;
-  opacity: 0.5;
-}
-
-.Pixso-group-77_63 {
-  width: 470px;
-  height: 51px;
-  position: absolute;
-  left: 32px;
-  top: 100px;
-}
-
-.Pixso-rectangle-77_65 {
-  width: 470px;
-  height: 51px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 13px 13px 13px 13px;
-  background-color: rgba(107, 107, 107, 0.10999999940395355);
-}
-
-.Pixso-paragraph-77_66 {
-  font-size: 18px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
-  width: 59px;
-  height: 30px;
-  position: absolute;
-  left: 27px;
-  top: 15px;
-}
-
-.Pixso-group-77_67 {
-  width: 744px;
-  height: 78px;
-  position: absolute;
-  left: 33px;
-  top: 349px;
-}
-
-.Pixso-rectangle-77_68 {
-  width: 470px;
-  height: 78px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 172px 172px 172px 172px;
-  background-color: rgba(255, 255, 255, 1);
-}
-
-.Pixso-paragraph-77_69 {
-  font-size: 30px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(0, 0, 0, 1);
-  width: 646px;
-  height: auto;
-  position: absolute;
-  left: 98px;
-  top: 20px;
-}
-
-.Pixso-group-77_70 {
-  width: 225px;
-  height: 51px;
-  position: absolute;
-  left: 277px;
-  top: 172px;
-}
-
-.Pixso-rectangle-77_71 {
-  width: 225px;
-  height: 51px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 13px 13px 13px 13px;
-}
-
-.Pixso-rectangle-77_72 {
-  width: 225px;
-  height: 51px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 13px 13px 13px 13px;
-  background-color: rgba(107, 107, 107, 0.10999999940395355);
-}
-
-.Pixso-paragraph-77_73 {
-  font-size: 16px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 29px;
-  top: 16px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-group-77_74 {
-  width: 470px;
-  height: 109.8851318359375px;
-  position: absolute;
-  left: 34px;
-  top: 213px;
-}
-
-.Pixso-paragraph-77_75 {
-  font-size: 16px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 1px;
-  top: 28.8851318359375px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-vector-77_76 {
-  width: 3.19%;
-  height: 8.45%;
-  background-image: url(./image/Vector_77_76.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 30%;
-  right: 66.81%;
-  top: 55.41%;
-  bottom: 36.14%;
-}
-
-.Pixso-vector-77_77 {
-  width: 3.83%;
-  height: 15.21%;
-  background-image: url(./image/Vector_77_77.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0.21%;
-  right: 95.96%;
-  top: 53.59%;
-  bottom: 31.2%;
-}
-
-.Pixso-frame-77_78 {
-  width: 5.11%;
-  height: 20.28%;
-  overflow: hidden;
-  position: absolute;
-  left: 31.91%;
-  right: 62.98%;
-  top: 0%;
-  bottom: 79.72%;
-}
-
-.Pixso-paragraph-77_79 {
-  font-size: 16px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 27px;
-  top: 56.8851318359375px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-77_80 {
-  font-size: 16px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 164px;
-  top: 56.8851318359375px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-77_81 {
-  font-size: 11px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  width: 470px;
-  height: auto;
-  position: absolute;
-  left: 0px;
-  top: 82.8851318359375px;
-}
-
-.Pixso-paragraph-77_82 {
-  font-size: 36px;
-  font-family: "Montserrat-Bold";
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 293px;
-  top: 4px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-group-77_83 {
-  width: 395px;
-  height: 232px;
-  position: absolute;
-  left: 529px;
-  top: 100px;
-}
-
-.Pixso-rectangle-77_85 {
-  width: 395px;
-  height: 232px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 13px 13px 13px 13px;
-  background-color: rgba(107, 107, 107, 0.10999999940395355);
-}
-
-.Pixso-paragraph-77_86 {
-  font-size: 14px;
-  font-family: "Montserrat-SemiBold";
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
-  width: 105px;
-  height: 18.64285659790039px;
-  position: absolute;
-  left: 27px;
-  top: 17.60714340209961px;
-}
-
-.Pixso-group-77_87 {
-  width: 312px;
-  height: 54px;
-  position: absolute;
-  left: 583px;
-  top: 364px;
-}
-
-.Pixso-vector-77_88 {
-  width: 13.78%;
-  height: 73.94%;
-  background-image: url(./image/Vector_77_88.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 57.69%;
-  right: 28.53%;
-  top: 16.67%;
-  bottom: 9.39%;
-}
-
-.Pixso-rectangle-77_89 {
-  width: 48px;
-  height: 47px;
-  position: absolute;
-  left: 264px;
-  top: 3px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(./image/01f536326e97acf7660b4c45bc4195809a857167.png);
-}
-
-.Pixso-rectangle-77_90 {
-  width: 55px;
-  height: 54px;
-  position: absolute;
-  left: 89px;
-  top: 0px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(./image/8e1a92168eefec5b6b3a7997eee327a55614ec04.png);
-}
-
-.Pixso-vector-77_91 {
-  width: 15.38%;
-  height: 80.82%;
-  background-image: url(./image/Vector_77_91.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0%;
-  right: 84.62%;
-  top: 5.56%;
-  bottom: 13.62%;
-}
-
-.Pixso-group-77_92 {
-  width: 703px;
-  height: 141.9991455078125px;
-  position: absolute;
-  left: 90px;
-  top: 714px;
-}
-
-.Pixso-group-77_93 {
-  width: 130px;
-  height: 120px;
-  position: absolute;
-  left: 430px;
-  top: 1px;
-}
-
-.Pixso-rectangle-77_94 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 19px 19px 19px 19px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-  background-color: rgba(255, 255, 255, 0.10000000149011612);
-}
-
-.stroke-wrapper-77_94 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 130px;
-  height: 120px;
-}
-
-.stroke-77_94 {
-  position: absolute;
-  inset: 0px;
-  border-radius: 19px 19px 19px 19px;
-  pointer-events: none;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  box-sizing: border-box;
-  border-color: rgba(255, 255, 255, 1);
-}
-
-.Pixso-vector-77_95 {
-  width: 18.46%;
-  height: 18.58%;
-  background-image: url(./image/Frame_77_95.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 40.77%;
-  right: 40.77%;
-  top: 25.83%;
-  bottom: 55.59%;
-}
-
-.Pixso-paragraph-77_97 {
-  font-size: 14px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 14px;
-  top: 74px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-77_98 {
-  font-size: 14px;
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 14px;
-  top: 89px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-group-77_99 {
-  width: 130px;
-  height: 120px;
-  position: absolute;
-  left: 143px;
-  top: 1px;
-}
-
-.Pixso-rectangle-77_100 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 19px 19px 19px 19px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-  background-color: rgba(255, 255, 255, 0.10000000149011612);
-}
-
-.stroke-wrapper-77_100 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 130px;
-  height: 120px;
-}
-
-.stroke-77_100 {
-  position: absolute;
-  inset: 0px;
-  border-radius: 19px 19px 19px 19px;
-  pointer-events: none;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  box-sizing: border-box;
-  border-color: rgba(255, 255, 255, 1);
-}
-
-.Pixso-paragraph-77_101 {
-  font-size: 14px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 14px;
-  top: 73px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-77_102 {
-  font-size: 14px;
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  width: 97px;
-  height: auto;
-  position: absolute;
-  left: 14px;
-  top: 88px;
-}
-
-.Pixso-vector-77_103 {
-  width: 18.46%;
-  height: 18.58%;
-  background-image: url(./image/Frame_77_103.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 40.77%;
-  right: 40.77%;
-  top: 25.83%;
-  bottom: 55.59%;
-}
-
-.Pixso-group-77_105 {
-  width: 130px;
-  height: 120px;
-  position: absolute;
-  left: 0px;
-  top: 1px;
-}
-
-.Pixso-rectangle-77_106 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 19px 19px 19px 19px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-  background-color: rgba(255, 255, 255, 0.10000000149011612);
-}
-
-.stroke-wrapper-77_106 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 130px;
-  height: 120px;
-}
-
-.stroke-77_106 {
-  position: absolute;
-  inset: 0px;
-  border-radius: 19px 19px 19px 19px;
-  pointer-events: none;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  box-sizing: border-box;
-  border-color: rgba(255, 255, 255, 1);
-}
-
-.Pixso-paragraph-77_107 {
-  font-size: 14px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 13px;
-  top: 73px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-vector-77_108 {
-  width: 18.46%;
-  height: 18.58%;
-  background-image: url(./image/Frame_77_108.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 39.23%;
-  right: 42.31%;
-  top: 25.83%;
-  bottom: 55.59%;
-}
-
-.Pixso-paragraph-77_110 {
-  font-size: 14px;
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 13px;
-  top: 92px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-group-77_111 {
-  width: 130px;
-  height: 120px;
-  position: absolute;
-  left: 287px;
-  top: 0px;
-}
-
-.Pixso-rectangle-77_112 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 19px 19px 19px 19px;
-  background-color: rgba(255, 255, 255, 0.10000000149011612);
-}
-
-.stroke-wrapper-77_112 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 130px;
-  height: 120px;
-}
-
-.stroke-77_112 {
-  position: absolute;
-  inset: 0px;
-  border-radius: 19px 19px 19px 19px;
-  pointer-events: none;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  box-sizing: border-box;
-  border-color: rgba(255, 255, 255, 1);
-}
-
-.Pixso-vector-77_113 {
-  width: 18.46%;
-  height: 18.57%;
-  background-image: url(./image/Frame_77_113.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 39.23%;
-  right: 42.31%;
-  top: 26.67%;
-  bottom: 54.76%;
-}
-
-.Pixso-paragraph-77_115 {
-  font-size: 14px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: 70px;
-  height: auto;
-  position: absolute;
-  left: 14px;
-  top: 74px;
-}
-
-.Pixso-paragraph-77_116 {
-  font-size: 14px;
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 14px;
-  top: 89px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-vector-77_117 {
-  width: 580.5px;
-  height: 15px;
-  background-image: url(./image/Vector_77_117.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 65px;
-  top: 141.9991455078125px;
-}
-
-.Pixso-group-77_118 {
-  width: 130px;
-  height: 120px;
-  position: absolute;
-  left: 573px;
-  top: 3px;
-}
-
-.Pixso-rectangle-77_119 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 19px 19px 19px 19px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-  background-color: rgba(255, 255, 255, 0.10000000149011612);
-}
-
-.stroke-wrapper-77_119 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 130px;
-  height: 120px;
-}
-
-.stroke-77_119 {
-  position: absolute;
-  inset: 0px;
-  border-radius: 19px 19px 19px 19px;
-  pointer-events: none;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  box-sizing: border-box;
-  border-color: rgba(255, 255, 255, 1);
-}
-
-.Pixso-vector-77_120 {
-  width: 18.46%;
-  height: 18.57%;
-  background-image: url(./image/Frame_77_120.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 40.77%;
-  right: 40.77%;
-  top: 24.17%;
-  bottom: 57.26%;
-}
-
-.Pixso-paragraph-77_122 {
-  font-size: 14px;
-  font-family: "Montserrat-Medium";
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 14px;
-  top: 74px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-paragraph-77_123 {
-  font-size: 14px;
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 14px;
-  top: 89px;
-  white-space: pre;
-  flex-grow: 0;
-}
-
-.Pixso-rectangle-77_124 {
-  width: 892px;
-  height: 822px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(./image/fc2a8c567238b628fb6621531191b4090e472cc3.png);
-  mix-blend-mode: hard-light;
-}
-
-
-  </style>
-
-  <style>
-    /* ── Viewport fit patch ─────────────────────────── */
-    html, body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;   /* outer scroll disabled */
-    }
-    .scale-root {
-      width: 1920px;
-      transform-origin: top left;
-      /* JS sets the actual scale value */
-    }
-    /* Make the inner scroll container fill the visible viewport */
-    .scroll-container {
-      height: 100vh !important;
-      overflow-y: auto !important;
-      overflow-x: hidden !important;
-    }
-    /* ─────────────────────────────────────────────── */
-  </style>
-  <script>
-    (function () {
-      function applyScale() {
-        var root = document.querySelector('.Pixso-canvas-0_1');
-        if (!root) return;
-        var designWidth = 1920;
-        var scale = window.innerWidth / designWidth;
-        root.style.width = designWidth + 'px';
-        root.style.transform = 'scale(' + scale + ')';
-        root.style.transformOrigin = 'top left';
-        // Shrink wrapper height so there's no dead space below
-        var wrapper = root.parentElement;
-        if (wrapper) {
-          wrapper.style.height = (root.scrollHeight * scale) + 'px';
-        }
-      }
-      document.addEventListener('DOMContentLoaded', applyScale);
-      window.addEventListener('resize', applyScale);
-    })();
-  </script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="scroll-container">
   <div id="0_1" class="Pixso-canvas-0_1">
-    <div id="66_60" class="Pixso-frame-66_60">
-      <div id="66_75" class="Pixso-group-66_75">
-        <div id="66_76" class="vector-wrapper-66_76">
-          <div id="66_76" class="Pixso-vector-66_76"></div>
+    <div id="130_1772" class="Pixso-frame-130_1772">
+      <div id="162_66" class="Pixso-rectangle-162_66"></div>
+      <div id="162_35" class="vector-wrapper-162_35">
+        <div id="162_35" class="Pixso-vector-162_35"></div>
+      </div>
+      <p id="130_1773" class="Pixso-paragraph-130_1773">ДЕРЕВЬЯ</p>
+      <p id="130_1774" class="Pixso-paragraph-130_1774">РУССКИЕ<br><br></p>
+      <p id="130_1775" class="Pixso-paragraph-130_1775">ОПЫТ. КАЧЕСТВО. ВЫГОДА. </p>
+      <div id="130_1789" class="Pixso-vector-130_1789"></div>
+      <a id="130_1790" class="Pixso-group-130_1790" href="catalog.html">
+        <div id="130_1791" class="stroke-wrapper-130_1791">
+          <div class="Pixso-rectangle-130_1791">
+            <div class="shadow-blend-unknown-2"></div>
+            <div class="shadow-blend-unknown-1"></div>
+            <div class="shadow-blend-unknown-0"></div>
+          </div>
+          <div class="stroke-130_1791"></div>
         </div>
-        <div id="66_77" class="vector-wrapper-66_77">
-          <div id="66_77" class="Pixso-vector-66_77"></div>
+        <p id="130_1792" class="Pixso-paragraph-130_1792">СМОТРЕТЬ КАТАЛОГ<br><br></p>
+        <div id="130_1793" class="Pixso-vector-130_1793"></div>
+      </a>
+      <div id="130_1794" class="Pixso-group-130_1794">
+        <div id="130_1795" class="Pixso-group-130_1795">
+          <div id="130_1796" class="Pixso-rectangle-130_1796"></div>
+          <div id="130_1797" class="Pixso-vector-130_1797"></div>
+          <p id="130_1799" class="Pixso-paragraph-130_1799">Сделаем</p>
+          <p id="130_1800" class="Pixso-paragraph-130_1800">скидку</p>
         </div>
-        <div id="66_78" class="vector-wrapper-66_78">
-          <div id="66_78" class="Pixso-vector-66_78"></div>
+        <div id="130_1801" class="Pixso-group-130_1801">
+          <div id="130_1802" class="Pixso-rectangle-130_1802"></div>
+          <p id="130_1803" class="Pixso-paragraph-130_1803">Покажем </p>
+          <p id="130_1804" class="Pixso-paragraph-130_1804">фото и видео</p>
+          <div id="130_1805" class="Pixso-vector-130_1805"></div>
         </div>
-        <div id="66_79" class="vector-wrapper-66_79">
-          <div id="66_79" class="Pixso-vector-66_79"></div>
+        <div id="130_1807" class="Pixso-group-130_1807">
+          <div id="130_1808" class="Pixso-rectangle-130_1808"></div>
+          <p id="130_1809" class="Pixso-paragraph-130_1809">Поможем </p>
+          <div id="130_1810" class="Pixso-vector-130_1810"></div>
+          <p id="130_1812" class="Pixso-paragraph-130_1812">в выборе</p>
         </div>
-        <div id="66_80" class="vector-wrapper-66_80">
-          <div id="66_80" class="Pixso-vector-66_80"></div>
+        <div id="130_1813" class="Pixso-group-130_1813">
+          <div id="130_1814" class="Pixso-rectangle-130_1814"></div>
+          <div id="130_1815" class="Pixso-vector-130_1815"></div>
+          <p id="130_1817" class="Pixso-paragraph-130_1817">Выберем</p>
+          <p id="130_1818" class="Pixso-paragraph-130_1818">лучшее</p>
         </div>
-        <div id="66_81" class="vector-wrapper-66_81">
-          <div id="66_81" class="Pixso-vector-66_81"></div>
-        </div>
-        <div id="66_218" class="vector-wrapper-66_218">
-          <div id="66_218" class="Pixso-vector-66_218"></div>
-        </div>
-        <div id="66_210" class="vector-wrapper-66_210">
-          <div id="66_210" class="Pixso-vector-66_210"></div>
-        </div>
-        <div id="66_214" class="vector-wrapper-66_214">
-          <div id="66_214" class="Pixso-vector-66_214"></div>
+        <div id="130_1819" class="Pixso-vector-130_1819"></div>
+        <div id="130_1820" class="Pixso-group-130_1820">
+          <div id="130_1821" class="Pixso-rectangle-130_1821"></div>
+          <div id="130_1822" class="Pixso-vector-130_1822"></div>
+          <p id="130_1824" class="Pixso-paragraph-130_1824">Оформим</p>
+          <p id="130_1825" class="Pixso-paragraph-130_1825">сделку</p>
         </div>
       </div>
-      <div id="66_244" class="Pixso-group-66_244">
-        <div id="66_227" class="Pixso-vector-66_227"></div>
-        <p id="66_228" class="Pixso-paragraph-66_228">Компания</p>
-        <p id="66_229" class="Pixso-paragraph-66_229">Каталог</p>
-        <p id="66_230" class="Pixso-paragraph-66_230">Главная</p>
-        <p id="66_231" class="Pixso-paragraph-66_231">Новости</p>
-        <p id="66_232" class="Pixso-paragraph-66_232">Контакты</p>
-        <p id="66_233" class="Pixso-paragraph-66_233">© 2026 Руссие Деревья</p>
-        <p id="66_224" class="Pixso-paragraph-66_224">г.Санкт-Петербург,</p>
-        <p id="66_225" class="Pixso-paragraph-66_225">Московское шоссе, д. 271</p>
-        <p id="66_226" class="Pixso-paragraph-66_226">Поселок Ленсоветовский, </p>
-        <p id="66_222" class="Pixso-paragraph-66_222">Русские Деревья</p>
-        <p id="66_223" class="Pixso-paragraph-66_223">Офис в России</p>
-        <div id="66_220" class="Pixso-rectangle-66_220"></div>
-      </div>
-      <div id="66_152" class="Pixso-group-66_152">
-        <div id="66_153" class="Pixso-group-66_153">
-          <div id="66_154" class="Pixso-group-66_154">
-            <p id="66_155" class="Pixso-paragraph-66_155">Широкий ассортимент растений для озеленения приусадебного участка, а также благоустройства строительных объектов и городских территорий.</p>
-            <p id="66_156" class="Pixso-paragraph-66_156">Мы предлагаем </p>
+      <p id="130_1844" class="Pixso-paragraph-130_1844">ОПТОВО ЛОГИСТИЧЕСКИЙ САДОВЫЙ ЦЕНТР</p>
+      <p id="141_137" class="Pixso-paragraph-141_137">БОЛЬШЕ 20 ЛЕТ В РЫНКЕ</p>
+      <div id="130_1860" class="Pixso-group-130_1860 anim-fade-up">
+        <div id="130_1861" class="Pixso-group-130_1861">
+          <div id="130_1862" class="Pixso-vector-130_1862"></div>
+          <div id="130_1863" class="Pixso-text-130_1863">
+            <p id="130_1863_0" class="Pixso-paragraph-130_1863_0">
+<span id="130_1863_0_1" class="Pixso-span-130_1863_0_1">Вырищивние</span></p>
+            <p id="130_1863_1" class="Pixso-paragraph-130_1863_1">
+<span id="130_1863_1_1" class="Pixso-span-130_1863_1_1">растений </span></p>
           </div>
+          <div id="130_1864" class="Pixso-text-130_1864">
+            <p id="130_1864_0" class="Pixso-paragraph-130_1864_0">
+<span id="130_1864_0_1" class="Pixso-span-130_1864_0_1">Крупномерные деревья,</span></p>
+            <p id="130_1864_1" class="Pixso-paragraph-130_1864_1">
+<span id="130_1864_1_1" class="Pixso-span-130_1864_1_1">саженцы, кустарники</span></p>
+          </div>
+          <p id="130_1865" class="Pixso-paragraph-130_1865">1</p>
         </div>
-        <div id="66_157" class="Pixso-group-66_157">
-          <div id="66_158" class="Pixso-group-66_158">
-            <p id="66_159" class="Pixso-paragraph-66_159">Верески</p>
-            <p id="66_160" class="Pixso-paragraph-66_160">Дуб</p>
-            <p id="66_161" class="Pixso-paragraph-66_161">Береза</p>
-            <p id="66_162" class="Pixso-paragraph-66_162">Ирис</p>
-            <p id="66_163" class="Pixso-paragraph-66_163">Малина</p>
-            <p id="66_164" class="Pixso-paragraph-66_164">Астра</p>
-            <p id="66_165" class="Pixso-paragraph-66_165">Смородина</p>
-          </div>
+        <div id="130_1866" class="Pixso-group-130_1866">
+          <div id="130_1867" class="Pixso-vector-130_1867"></div>
+          <p id="130_1868" class="Pixso-paragraph-130_1868">Продажа в <br>садовом центре</p>
+          <p id="130_1869" class="Pixso-paragraph-130_1869">Большой ассортимент <br>растений для учатка и <br>города</p>
+          <p id="130_1870" class="Pixso-paragraph-130_1870">4</p>
         </div>
-        <div id="66_168" class="Pixso-rectangle-66_168"></div>
-        <p id="66_221" class="Pixso-paragraph-66_221">Русские Деревья</p>
-        <div id="66_219" class="Pixso-rectangle-66_219"></div>
-        <div id="77_4" class="Pixso-group-77_4">
-          <div id="77_43" class="Pixso-group-77_43">
-            <div id="77_42" class="Pixso-rectangle-77_42"></div>
-            <div id="77_1" class="Pixso-text-77_1">
-              <p id="77_1_0" class="Pixso-paragraph-77_1_0">
-<span id="77_1_0_1" class="Pixso-span-77_1_0_1">Сегодня до </span><span id="77_1_0_2" class="Pixso-span-77_1_0_2">18:00</span></p>
-            </div>
-          </div>
-          <div id="77_17" class="Pixso-group-77_17">
-            <div id="77_20" class="Pixso-group-77_20">
-              <div id="77_15" class="Pixso-rectangle-77_15"></div>
-              <p id="77_16" class="Pixso-paragraph-77_16">Пн - Пт</p>
-              <p id="77_28" class="Pixso-paragraph-77_28">9:00 – 18:00</p>
-            </div>
-            <div id="77_21" class="Pixso-group-77_21">
-              <p id="77_23" class="Pixso-paragraph-77_23">Сб</p>
-              <p id="77_31" class="Pixso-paragraph-77_31">10:00 - 17:00</p>
-              <div id="77_29" class="Pixso-rectangle-77_29"></div>
-            </div>
-            <div id="77_32" class="Pixso-group-77_32">
-              <p id="77_33" class="Pixso-paragraph-77_33">Вс</p>
-              <div id="77_34" class="Pixso-rectangle-77_34"></div>
-              <p id="77_35" class="Pixso-paragraph-77_35">Выходной</p>
-            </div>
-          </div>
-          <p id="66_176" class="Pixso-paragraph-66_176">Расписание</p>
+        <div id="130_1871" class="Pixso-group-130_1871">
+          <div id="130_1872" class="Pixso-vector-130_1872"></div>
+          <p id="130_1873" class="Pixso-paragraph-130_1873">Озеленение<br>территорий</p>
+          <p id="130_1874" class="Pixso-paragraph-130_1874">Комплексное благо-<br>устройство частных и <br>городских пространств</p>
+          <p id="130_1875" class="Pixso-paragraph-130_1875">3 </p>
         </div>
-        <div id="66_181" class="Pixso-text-66_181">
-          <p id="66_181_0" class="Pixso-paragraph-66_181_0">
-<span id="66_181_0_1" class="Pixso-span-66_181_0_1">Мы уверены в своих растениях и </span><span id="66_181_0_2" class="Pixso-span-66_181_0_2">гарантируем</span><span id="66_181_0_3" class="Pixso-span-66_181_0_3"> приживаемость, если вы соблюдаете правила посадки и ухода.</span></p>
-          <p id="66_181_1" class="Pixso-paragraph-66_181_1">&nbsp;</p>
+        <div id="130_1876" class="Pixso-group-130_1876">
+          <div id="130_1877" class="Pixso-vector-130_1877"></div>
+          <p id="130_1878" class="Pixso-paragraph-130_1878">Посадка под<br>ключ</p>
+          <p id="130_1879" class="Pixso-paragraph-130_1879">Посадка и пересадка<br>с профессиональным<br>подходом.</p>
+          <p id="130_1880" class="Pixso-paragraph-130_1880">2</p>
         </div>
       </div>
-      <div id="66_177" class="Pixso-group-66_177">
-        <div id="66_178" class="Pixso-group-66_178">
-          <p id="66_179" class="Pixso-paragraph-66_179">О нас</p>
-          <div id="66_180" class="Pixso-text-66_180">
-            <p id="66_180_0" class="Pixso-paragraph-66_180_0">
-<span id="66_180_0_1" class="Pixso-span-66_180_0_1">Питомник в Петербурге  «Русские Деревья» </span></p>
-            <p id="66_180_1" class="Pixso-paragraph-66_180_1">
-<span id="66_180_1_1" class="Pixso-span-66_180_1_1">существует с 2005 года. Компания специализируется </span></p>
-            <p id="66_180_2" class="Pixso-paragraph-66_180_2">
-<span id="66_180_2_1" class="Pixso-span-66_180_2_1">на выращивании, посадке и продаже посадочного </span></p>
-            <p id="66_180_3" class="Pixso-paragraph-66_180_3">
-<span id="66_180_3_1" class="Pixso-span-66_180_3_1">материала: крупномерных  декоративных и плодовых </span></p>
-            <p id="66_180_4" class="Pixso-paragraph-66_180_4">
-<span id="66_180_4_1" class="Pixso-span-66_180_4_1">деревьев, кустарников и многолетних растений.</span></p>
+      <div id="141_51" class="Pixso-group-141_51 anim-fade-up">
+        <div id="141_61" class="Pixso-group-141_61" onclick="submitForm()">
+          <div id="141_62" class="stroke-wrapper-141_62">
+            <div class="Pixso-rectangle-141_62"></div>
+            <div class="stroke-141_62"></div>
           </div>
+          <p id="141_63" class="Pixso-paragraph-141_63">Оставить заявку</p>
         </div>
-        <div id="66_183" class="Pixso-rectangle-66_183"></div>
-        <div id="66_236" class="Pixso-vector-66_236"></div>
-        <div id="66_184" class="Pixso-text-66_184">
-          <p id="66_184_0" class="Pixso-paragraph-66_184_0">
-<span id="66_184_0_1" class="Pixso-span-66_184_0_1">Более </span><span id="66_184_0_2" class="Pixso-span-66_184_0_2">20</span><span id="66_184_0_3" class="Pixso-span-66_184_0_3"> лет на рынке</span></p>
-        </div>
-        <div id="66_234" class="Pixso-rectangle-66_234"></div>
-        <div id="66_256" class="Pixso-group-66_256">
-          <div id="66_255" class="Pixso-group-66_255">
-            <div id="66_253" class="Pixso-vector-66_253"></div>
-            <p id="66_254" class="Pixso-paragraph-66_254">%</p>
+        <div id="141_68" class="Pixso-group-141_68">
+          <p id="141_69" class="Pixso-paragraph-141_69">Кто вы?</p>
+          <div id="141_72" class="Pixso-frame-141_72"></div>
+          <div id="162_14" class="Pixso-group-162_14">
+            <input type="radio" name="person_type" value="fizlico" id="radio-fiz" class="radio-real-input">
+            <div id="141_71" class="Pixso-vector-141_71"></div>
+            <p id="141_73" class="Pixso-paragraph-141_73">Физ. лицо</p>
           </div>
-          <p id="66_258" class="Pixso-paragraph-66_258">Приятные скидки</p>
+          <div id="162_13" class="Pixso-group-162_13">
+            <input type="radio" name="person_type" value="yurlico" id="radio-yur" class="radio-real-input">
+            <div id="141_70" class="Pixso-vector-141_70"></div>
+            <p id="141_74" class="Pixso-paragraph-141_74">Юр. лицо</p>
+          </div>
+          <label class="Pixso-paragraph-141_75 form-checkbox-wrapper"><input type="checkbox" id="input-agree" class="form-checkbox-real"><span>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и с правилами пользования платформой</span></label>
+        </div>
+        <div id="141_53" class="Pixso-group-141_53">
+          <div id="141_55" class="Pixso-rectangle-141_55"></div>
+          <input type="tel" id="input-phone" name="phone" class="form-input-field phone-input-field" value="+7" autocomplete="tel">
+        </div>
+        <div id="141_57" class="Pixso-group-141_57">
+          <div id="162_2" class="Pixso-rectangle-162_2"></div>
+          <input type="text" id="input-name" name="name" class="form-input-field" placeholder="Имя" autocomplete="name">
+        </div>
+        <div id="141_64" class="Pixso-group-141_64">
+          <div id="141_66" class="Pixso-rectangle-141_66"></div>
+          <input type="email" id="input-email" name="email" class="form-input-field" placeholder="Электронная почта" autocomplete="email">
+        </div>
+        <div id="141_83" class="Pixso-group-141_83">
+          <div id="141_85" class="Pixso-rectangle-141_85"></div>
+          <textarea id="input-comment" name="comment" class="form-textarea-field" placeholder="Комментарий"></textarea>
+          <button type="button" id="comment-close" class="comment-close-button" aria-label="Закрыть комментарий"></button>
+        </div>
+        <div id="162_15" class="Pixso-group-162_15">
+          <div id="162_16" class="stroke-wrapper-162_16">
+            <div class="Pixso-rectangle-162_16"></div>
+            <div class="stroke-162_16"></div>
+          </div>
+          <div id="162_17" class="Pixso-text-162_17">
+            <p id="162_17_0" class="Pixso-paragraph-162_17_0">
+<span id="162_17_0_1" class="Pixso-span-162_17_0_1">Адрес офиса: </span><span id="162_17_0_2" class="Pixso-span-162_17_0_2">Г. Санкт -Петербруг Поселок Ленсоветовский, Московское шоссе, д. 271</span></p>
+          </div>
         </div>
       </div>
-      <div id="66_185" class="Pixso-group-66_185">
-        <div id="66_186" class="Pixso-group-66_186">
-          <div id="66_187" class="Pixso-rectangle-66_187"></div>
-          <p id="66_188" class="Pixso-paragraph-66_188">Аккаунт</p>
-          <div id="66_189" class="Pixso-vector-66_189"></div>
+      <div id="130_1853" class="Pixso-group-130_1853 anim-fade-left">
+        <div id="130_1854" class="Pixso-rectangle-130_1854"></div>
+        <p id="130_1855" class="Pixso-paragraph-130_1855">О НАС</p>
+        <p id="130_1856" class="Pixso-paragraph-130_1856">ОСНОВНЫЕ НАПРАВЛЕНИЯ НАШЕЙ<br>ДЕЯТЕЛЬНОСТИ</p>
+        <p id="130_1857" class="Pixso-paragraph-130_1857">Питомник «Русские Деревья» существует с 2005 года. Мы выращиваем, продаём и высаживаем крупномерные декоративные и плодовые деревья, кустарники и многолетние растения.</p>
+        <p id="130_1858" class="Pixso-paragraph-130_1858">Мы предлогаем широкий ассортимент растений<br>для озеленения приусадебного участка, а также благоустройств строительных объектов и городских территорий.</p>
+        <div id="130_1859" class="vector-wrapper-130_1859">
+          <div id="130_1859" class="Pixso-vector-130_1859"></div>
         </div>
-        <div id="66_192" class="Pixso-group-66_192">
-          <div id="66_193" class="Pixso-rectangle-66_193"></div>
-          <p id="66_194" class="Pixso-paragraph-66_194">Каталог</p>
-          <p id="66_195" class="Pixso-paragraph-66_195">Новости</p>
-          <p id="66_196" class="Pixso-paragraph-66_196">Главная</p>
-        </div>
-        <div id="66_197" class="Pixso-group-66_197">
-          <div id="66_242" class="Pixso-vector-66_242"></div>
-          <div id="66_243" class="stroke-wrapper-66_243">
-            <div class="Pixso-rectangle-66_243"></div>
-            <div class="stroke-66_243"></div>
+        <div id="156_15" class="Pixso-group-156_15">
+          <div id="156_16" class="vector-wrapper-156_16">
+            <div id="156_16" class="Pixso-vector-156_16"></div>
           </div>
-          <div id="66_199" class="Pixso-rectangle-66_199"></div>
+          <p id="156_17" class="Pixso-paragraph-156_17">ПОДРОБНЕЕ О НАС<br><br></p>
         </div>
       </div>
-      <div id="77_52" class="Pixso-group-77_52">
-        <div id="77_53" class="Pixso-group-77_53">
-          <p id="77_54" class="Pixso-paragraph-77_54">Русские Деревья</p>
-          <p id="77_55" class="Pixso-paragraph-77_55">ОПТОВО-ЛОГИСТИЧЕСКИЙ </p>
-          <p id="77_56" class="Pixso-paragraph-77_56">САДОВЫЙ ЦЕНТР</p>
+      <div id="130_1845" class="Pixso-group-130_1845 anim-fade-right">
+        <div id="130_1850" class="Pixso-rectangle-130_1850"></div>
+        <div id="162_22" class="Pixso-group-162_22">
+          <p id="130_1846" class="Pixso-paragraph-130_1846">КАЧЕСТВО</p>
+          <div id="130_1847" class="Pixso-text-130_1847">
+            <p id="130_1847_0" class="Pixso-paragraph-130_1847_0">
+<span id="130_1847_0_1" class="Pixso-span-130_1847_0_1">Мы уверены в своих растениях и </span><span id="130_1847_0_2" class="Pixso-span-130_1847_0_2">гарантируем</span><span id="130_1847_0_3" class="Pixso-span-130_1847_0_3"> </span></p>
+            <p id="130_1847_1" class="Pixso-paragraph-130_1847_1">
+<span id="130_1847_1_1" class="Pixso-span-130_1847_1_1">приживаемость, если вы соблюдаете правила посадки и  ухода.</span><span id="130_1847_1_2" class="Pixso-span-130_1847_1_2"> </span></p>
+          </div>
+          <div id="130_1848" class="Pixso-text-130_1848">
+            <p id="130_1848_0" class="Pixso-paragraph-130_1848_0">
+<span id="130_1848_0_2" class="Pixso-span-130_1848_0_2">Каждое </span><span id="130_1848_0_3" class="Pixso-span-130_1848_0_3">растение проходит тщательный отбор, выращивается с соблюдением технологий и адаптировано к климатическим условиям.</span></p>
+          </div>
+          <div id="130_1849" class="Pixso-text-130_1849">
+            <p id="130_1849_0" class="Pixso-paragraph-130_1849_0">
+<span id="130_1849_0_1" class="Pixso-span-130_1849_0_1">Мы сопровождаем вас </span><span id="130_1849_0_2" class="Pixso-span-130_1849_0_2">на всех</span><span id="130_1849_0_3" class="Pixso-span-130_1849_0_3"> этапах — от выбора до посадки, чтобы результат полностью оправдал ожидания и радовал вас долгие годы.</span></p>
+          </div>
+          <div id="156_11" class="Pixso-vector-156_11"></div>
+          <div id="156_12" class="Pixso-vector-156_12"></div>
+          <div id="156_13" class="Pixso-vector-156_13"></div>
+          <div id="156_14" class="Pixso-vector-156_14"></div>
         </div>
-        <div id="77_57" class="Pixso-group-77_57">
-          <div id="77_58" class="vector-wrapper-77_58">
-            <div id="77_58" class="Pixso-vector-77_58"></div>
-          </div>
-          <div id="77_59" class="Pixso-group-77_59">
-            <div id="77_61" class="Pixso-rectangle-77_61"></div>
-            <p id="77_62" class="Pixso-paragraph-77_62">+7 (000) 000 00 00</p>
-          </div>
-          <div id="77_63" class="Pixso-group-77_63">
-            <div id="77_65" class="Pixso-rectangle-77_65"></div>
-            <p id="77_66" class="Pixso-paragraph-77_66">Имя</p>
-          </div>
-          <div id="77_67" class="Pixso-group-77_67">
-            <div id="77_68" class="Pixso-rectangle-77_68"></div>
-            <p id="77_69" class="Pixso-paragraph-77_69">Оставить заявку</p>
-          </div>
-          <div id="77_70" class="Pixso-group-77_70">
-            <div id="77_71" class="Pixso-rectangle-77_71"></div>
-            <div id="77_72" class="Pixso-rectangle-77_72"></div>
-            <p id="77_73" class="Pixso-paragraph-77_73">Электронная почта</p>
-          </div>
-          <div id="77_74" class="Pixso-group-77_74">
-            <p id="77_75" class="Pixso-paragraph-77_75">Кто вы?</p>
-            <div id="77_76" class="Pixso-vector-77_76"></div>
-            <div id="77_77" class="Pixso-vector-77_77"></div>
-            <div id="77_78" class="Pixso-frame-77_78"></div>
-            <p id="77_79" class="Pixso-paragraph-77_79">Физ. лицо</p>
-            <p id="77_80" class="Pixso-paragraph-77_80">Юр. лицо</p>
-            <p id="77_81" class="Pixso-paragraph-77_81">Нажимая на кнопку, вы соглашайтесь на обработку персональных данных и с правилами пользование платформой</p>
-          </div>
-          <p id="77_82" class="Pixso-paragraph-77_82">Связаться с нами</p>
-          <div id="77_83" class="Pixso-group-77_83">
-            <div id="77_85" class="Pixso-rectangle-77_85"></div>
-            <p id="77_86" class="Pixso-paragraph-77_86">Комментарий</p>
-          </div>
-          <div id="77_87" class="Pixso-group-77_87">
-            <div id="77_88" class="Pixso-vector-77_88"></div>
-            <div id="77_89" class="Pixso-rectangle-77_89"></div>
-            <div id="77_90" class="Pixso-rectangle-77_90"></div>
-            <div id="77_91" class="Pixso-vector-77_91"></div>
+      </div>
+      <div id="156_9" class="Pixso-group-156_9 anim-fade-up">
+        <div id="130_1830" class="Pixso-group-130_1830">
+          <p id="130_1832" class="Pixso-paragraph-130_1832">ОПЫТ </p>
+          <p id="130_1833" class="Pixso-paragraph-130_1833">Многолетний опыт и профессиональный подход к выращиванию и продаже качественных  растений</p>
+          <div id="130_1834" class="Pixso-group-130_1834">
+            <p id="130_1835" class="Pixso-paragraph-130_1835 anim-counter" data-delay="0">20+</p>
+            <p id="130_1836" class="Pixso-paragraph-130_1836">лет на рынке</p>
+            <div id="130_1837" class="Pixso-group-130_1837">
+              <p id="130_1838" class="Pixso-paragraph-130_1838 anim-counter" data-delay="200">100+</p>
+              <p id="130_1839" class="Pixso-paragraph-130_1839">видов растений</p>
+            </div>
+            <div id="130_1840" class="Pixso-group-130_1840">
+              <p id="130_1841" class="Pixso-paragraph-130_1841 anim-counter" data-delay="400">10000+</p>
+              <p id="130_1842" class="Pixso-paragraph-130_1842">продаж</p>
+            </div>
+            <div id="130_1843" class="Pixso-vector-130_1843"></div>
+            <div id="130_1829" class="Pixso-vector-130_1829"></div>
           </div>
         </div>
-        <div id="77_92" class="Pixso-group-77_92">
-          <div id="77_93" class="Pixso-group-77_93">
-            <div id="77_94" class="stroke-wrapper-77_94">
-              <div class="Pixso-rectangle-77_94"></div>
-              <div class="stroke-77_94"></div>
-            </div>
-            <div id="77_95" class="Pixso-vector-77_95"></div>
-            <p id="77_97" class="Pixso-paragraph-77_97">Сделаем</p>
-            <p id="77_98" class="Pixso-paragraph-77_98">скидку</p>
-          </div>
-          <div id="77_99" class="Pixso-group-77_99">
-            <div id="77_100" class="stroke-wrapper-77_100">
-              <div class="Pixso-rectangle-77_100"></div>
-              <div class="stroke-77_100"></div>
-            </div>
-            <p id="77_101" class="Pixso-paragraph-77_101">Покажем </p>
-            <p id="77_102" class="Pixso-paragraph-77_102">фото и видео</p>
-            <div id="77_103" class="Pixso-vector-77_103"></div>
-          </div>
-          <div id="77_105" class="Pixso-group-77_105">
-            <div id="77_106" class="stroke-wrapper-77_106">
-              <div class="Pixso-rectangle-77_106"></div>
-              <div class="stroke-77_106"></div>
-            </div>
-            <p id="77_107" class="Pixso-paragraph-77_107">Поможем </p>
-            <div id="77_108" class="Pixso-vector-77_108"></div>
-            <p id="77_110" class="Pixso-paragraph-77_110">в выборе</p>
-          </div>
-          <div id="77_111" class="Pixso-group-77_111">
-            <div id="77_112" class="stroke-wrapper-77_112">
-              <div class="Pixso-rectangle-77_112"></div>
-              <div class="stroke-77_112"></div>
-            </div>
-            <div id="77_113" class="Pixso-vector-77_113"></div>
-            <p id="77_115" class="Pixso-paragraph-77_115">Выберем</p>
-            <p id="77_116" class="Pixso-paragraph-77_116">лучшее</p>
-          </div>
-          <div id="77_117" class="Pixso-vector-77_117"></div>
-          <div id="77_118" class="Pixso-group-77_118">
-            <div id="77_119" class="stroke-wrapper-77_119">
-              <div class="Pixso-rectangle-77_119"></div>
-              <div class="stroke-77_119"></div>
-            </div>
-            <div id="77_120" class="Pixso-vector-77_120"></div>
-            <p id="77_122" class="Pixso-paragraph-77_122">Оформим</p>
-            <p id="77_123" class="Pixso-paragraph-77_123">сделку</p>
+      </div>
+      <div id="156_18" class="Pixso-vector-156_18"></div>
+      <div id="152_1" class="Pixso-group-152_1 anim-fade-up">
+        <div id="141_87" class="Pixso-group-141_87">
+          <div id="141_97" class="Pixso-group-141_97">
+            <div id="141_99" class="Pixso-rectangle-141_99"></div>            <p id="141_100" class="Pixso-paragraph-141_100">Юля</p>            <p id="141_101" class="Pixso-paragraph-141_101">Менеджер по продажам</p><a id="141_102" href="tel:8-921-943-82-00" target="_blank" class="Pixso-paragraph-141_102">+7 (921) 943-82-00</a></div>
+          <div id="141_103" class="Pixso-group-141_103">
+            <div id="162_44" class="Pixso-rectangle-162_44"></div>            <p id="141_106" class="Pixso-paragraph-141_106">Ольга</p>            <p id="141_107" class="Pixso-paragraph-141_107">Делопроизводство</p><a id="141_108" href="tel:8-921-943-82-00" target="_blank" class="Pixso-paragraph-141_108">+7 (921) 943-82-00</a></div>
+          <div id="141_109" class="Pixso-group-141_109">
+            <div id="162_45" class="Pixso-rectangle-162_45"></div>            <p id="141_112" class="Pixso-paragraph-141_112">Ольга</p>            <p id="141_113" class="Pixso-paragraph-141_113">Менеджер по продажам</p><a id="141_114" href="tel:8-921-943-82-00" target="_blank" class="Pixso-paragraph-141_114">+7 (921) 943-82-00</a></div>
+          <div id="141_115" class="Pixso-group-141_115">
+            <div id="162_37" class="Pixso-rectangle-162_37"></div>            <p id="141_118" class="Pixso-paragraph-141_118">Наталья</p>            <p id="141_119" class="Pixso-paragraph-141_119">Бухгалтерия</p><a id="141_120" href="tel:8-921-943-82-00" target="_blank" class="Pixso-paragraph-141_120">+7 (921) 943-82-00</a></div>
+          <div id="141_121" class="Pixso-group-141_121">
+            <div id="162_41" class="Pixso-rectangle-162_41"></div>            <p id="141_124" class="Pixso-paragraph-141_124">Дарья</p>            <p id="141_125" class="Pixso-paragraph-141_125">Менеджер по продажам</p><a id="141_126" href="tel:8-921-943-82-00" target="_blank" class="Pixso-paragraph-141_126">+7 (921) 943-82-00</a></div>
+          <div id="141_127" class="Pixso-group-141_127">
+            <div id="162_38" class="Pixso-rectangle-162_38"></div>            <p id="141_130" class="Pixso-paragraph-141_130">Наталья</p>            <p id="141_131" class="Pixso-paragraph-141_131">Менеджер по закупкам</p><a id="141_132" href="tel:8-921-943-82-00" target="_blank" class="Pixso-paragraph-141_132">+7 (921) 943-82-00</a></div>
+          <div id="141_89" class="Pixso-group-141_89">
+            <div id="162_52" class="Pixso-rectangle-162_52"></div>            <p id="141_92" class="Pixso-paragraph-141_92">Элонна Юрьевна</p>            <p id="141_93" class="Pixso-paragraph-141_93">Директор</p><a id="141_95" href="tel:8-921-348-96-89" target="_blank" class="Pixso-paragraph-141_95">+7 (921) 348-96-89</a>            <div id="162_25" class="Pixso-rectangle-162_25"></div></div>
+          <div id="141_133" class="Pixso-group-141_133">
+            <p id="141_136" class="Pixso-paragraph-141_136">СВЯЗЬ</p>
+            <a href="https://max.ru" target="_blank" class="social-icon-link" aria-label="Макс"><div id="141_79" class="Pixso-vector-141_79"></div></a>
+            <a href="https://vk.com" target="_blank" class="social-icon-link" aria-label="ВКонтакте"><div id="141_82" class="Pixso-vector-141_82"></div></a>
+            <a href="https://dzen.ru" target="_blank" class="social-icon-link" aria-label="Яндекс Дзен"><div id="141_80" class="Pixso-rectangle-141_80"></div></a>
+            <a href="https://t.me" target="_blank" class="social-icon-link" aria-label="Телеграм"><div id="141_81" class="Pixso-rectangle-141_81"></div></a>
           </div>
         </div>
-        <div id="77_124" class="Pixso-rectangle-77_124"></div>
+        <div id="162_34" class="vector-wrapper-162_34">
+          <div id="162_34" class="Pixso-vector-162_34"></div>
+        </div>
+      </div>
+      <div id="162_28" class="Pixso-rectangle-162_28"></div>
+      <p id="162_29" class="Pixso-paragraph-162_29">Видео</p>
+      <p id="162_33" class="Pixso-paragraph-162_33">Наша команда</p>
+      <div id="130_1776" class="Pixso-group-130_1776">
+        <div id="130_1777" class="Pixso-rectangle-130_1777"></div>
+        <p id="130_1778" class="Pixso-paragraph-130_1778">РУССКИЕ<br><br></p>
+        <p id="130_1779" class="Pixso-paragraph-130_1779">ДЕРЕВЬЯ</p>
+        <div id="130_1780" class="Pixso-group-130_1780">
+          <a id="130_1781" class="Pixso-paragraph-130_1781 header-nav-link is-active" href="Index.html">ГЛАВНАЯ</a>
+          <a id="130_1782" class="Pixso-paragraph-130_1782 header-nav-link" href="catalog.html">КАТАЛОГ</a>
+          <a id="130_1784" class="Pixso-paragraph-130_1784 header-nav-link" href="news.html">НОВОСТИ</a>
+        </div>
+        <div id="156_2" class="Pixso-group-156_2" onclick="scrollToSection('141_136')" title="Связаться с нами">
+          <div id="156_3" class="stroke-wrapper-156_3">
+            <div class="Pixso-rectangle-156_3"></div>
+            <div class="stroke-156_3"></div>
+          </div>
+          <p id="156_4" class="Pixso-paragraph-156_4">СВЯЗАТЬСЯ С НАМИ<br><br></p>
+        </div>
+        <div id="130_1788" class="Pixso-vector-130_1788"></div>
       </div>
     </div>
   </div>
 </div>
 
-
-<script>
-
-</script>
 
 </body>
 </html>

@@ -1,0 +1,2836 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,ul,menu {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+ol li::marker, ul li::before {
+  letter-spacing: 0;
+}
+
+.scroll-container > div {
+  width: 100%;
+}
+
+.container > div {
+  width: 100%;
+}
+
+.Pixso-canvas-0_1 > div {
+  width: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+span {
+  word-break: break-word;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-container {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.Pixso-canvas-0_1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-frame-130_1772 {
+  width: 100%;
+  height: 380.75rem;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  background-color: rgba(0, 2, 0, 1);
+}
+
+.Pixso-rectangle-162_66 {
+  width: 120rem;
+  height: 67.5625rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../image/94dd3af7ccd5b9e3a58a4d5fc761d424a05a6efd.png);
+  opacity: 0.6200000047683716;
+}
+
+.Pixso-vector-162_35 {
+  position: absolute;
+  inset: -9.16030534351145% -3.3271719038817005% -9.16030534351145% -3.3271719038817005% ;
+  background-image: url(../image/Vector_162_35.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.vector-wrapper-162_35 {
+  position: absolute;
+  left: 43.6875rem;
+  top: 303rem;
+  width: 67.625rem;
+  height: 24.5625rem;
+}
+
+.Pixso-paragraph-130_1773 {
+  font-size: 6.6875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 3.1875rem;
+  top: 18.4375rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1774 {
+  font-size: 6.6875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: 33.75rem;
+  height: 7.5rem;
+  position: absolute;
+  left: 3.1875rem;
+  top: 10.96875rem;
+}
+
+.Pixso-paragraph-130_1775 {
+  font-size: 2.25rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 3.1875rem;
+  top: 28rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-vector-130_1789 {
+  width: 4.5625rem;
+  height: 0.0625rem;
+  background-image: url(../image/Line_130_1789.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 3.1875rem;
+  top: 32.125rem;
+}
+
+.Pixso-group-130_1790 {
+  width: 18.0625rem;
+  height: 3.75rem;
+  position: absolute;
+  left: 3.1875rem;
+  top: 39.1875rem;
+  display: block;
+  text-decoration: none;
+}
+
+.Pixso-rectangle-130_1791 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
+  background-color: rgba(44, 117, 27, 1);
+}
+
+.stroke-wrapper-130_1791 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18.0625rem;
+  height: 3.75rem;
+}
+
+.stroke-130_1791 {
+  position: absolute;
+  inset: 0;
+  border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
+  pointer-events: none;
+  border-width: 0.125rem 0.125rem 0.125rem 0.125rem;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: rgba(33, 205, 0, 1);
+}
+
+.shadow-blend-unknown-0 {
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 0.9375rem 0.25rem rgba(43, 160, 24, 1) inset;
+  pointer-events: none;
+  mix-blend-mode: normal;
+  border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
+}
+
+.shadow-blend-unknown-1 {
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 2.75rem 0 rgba(36, 163, 12, 1) ;
+  pointer-events: none;
+  mix-blend-mode: normal;
+  border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
+}
+
+.shadow-blend-unknown-2 {
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 1.0625rem 0.4375rem rgba(29, 255, 0, 0.25) inset;
+  pointer-events: none;
+  mix-blend-mode: normal;
+  border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
+}
+
+.Pixso-paragraph-130_1792 {
+  font-size: 1rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: 13.4375rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 1.4375rem;
+  top: 1.25rem;
+}
+
+.Pixso-vector-130_1793 {
+  width: 1.750244rem;
+  height: 0.832642rem;
+  background-image: url(../image/Vector_130_1793.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 14.0625rem;
+  top: 1.458679rem;
+}
+
+.Pixso-group-130_1794 {
+  width: 47.373802rem;
+  height: 273.078186rem;
+  position: absolute;
+  left: 3.1875rem;
+  top: 46.3125rem;
+}
+
+.Pixso-group-130_1795 {
+  width: 10.235645rem;
+  height: 273.078186rem;
+  position: absolute;
+  left: 26.875rem;
+  top: 0;
+}
+
+.Pixso-rectangle-130_1796 {
+  width: 8.125rem;
+  height: 7.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1.1875rem 1.1875rem 1.1875rem 1.1875rem;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25) ;
+  background-color: rgba(255, 255, 255, 0.15000000596046448);
+  transition: background-color 0.45s ease;
+}
+
+.Pixso-vector-130_1797 {
+  width: 16.83%;
+  height: 3.07%;
+  background-image: url(../image/Frame_130_1797.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 83.17%;
+  right: 0%;
+  top: 96.93%;
+  bottom: 0%;
+}
+
+.Pixso-paragraph-130_1799 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0.875rem;
+  top: 4.625rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1800 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0.875rem;
+  top: 5.5625rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-group-130_1801 {
+  width: 8.125rem;
+  height: 273.078186rem;
+  position: absolute;
+  left: 8.9375rem;
+  top: 0;
+}
+
+.Pixso-rectangle-130_1802 {
+  width: 8.125rem;
+  height: 7.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1.1875rem 1.1875rem 1.1875rem 1.1875rem;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25) ;
+  background-color: rgba(255, 255, 255, 0.15000000596046448);
+  transition: background-color 0.45s ease;
+}
+
+.Pixso-paragraph-130_1803 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0.875rem;
+  top: 4.5625rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1804 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  width: 6.0625rem;
+  height: auto;
+  position: absolute;
+  left: 0.875rem;
+  top: 5.5rem;
+}
+
+.Pixso-vector-130_1805 {
+  width: 21.2%;
+  height: 3.07%;
+  background-image: url(../image/Frame_130_1805.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 72.03%;
+  right: 6.77%;
+  top: 96.93%;
+  bottom: 0%;
+}
+
+.Pixso-group-130_1807 {
+  width: 8.125rem;
+  height: 273.078186rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-rectangle-130_1808 {
+  width: 8.125rem;
+  height: 7.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1.1875rem 1.1875rem 1.1875rem 1.1875rem;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25) ;
+  background-color: rgba(255, 255, 255, 1);
+  transition: background-color 0.45s ease;
+}
+
+.Pixso-paragraph-130_1809 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0.8125rem;
+  top: 4.5625rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-vector-130_1810 {
+  width: 21.2%;
+  height: 3.07%;
+  background-image: url(../image/Frame_130_1810.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 53.95%;
+  right: 24.85%;
+  top: 96.93%;
+  bottom: 0%;
+}
+
+.Pixso-paragraph-130_1812 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0.8125rem;
+  top: 5.75rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-group-130_1813 {
+  width: 8.953947rem;
+  height: 272.953186rem;
+  position: absolute;
+  left: 17.75rem;
+  top: 0.125rem;
+}
+
+.Pixso-rectangle-130_1814 {
+  width: 8.125rem;
+  height: 7.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1.1875rem 1.1875rem 1.1875rem 1.1875rem;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25) ;
+  background-color: rgba(255, 255, 255, 0.15000000596046448);
+  transition: background-color 0.45s ease;
+}
+
+.Pixso-vector-130_1815 {
+  width: 19.24%;
+  height: 3.07%;
+  background-image: url(../image/Frame_130_1815.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 80.76%;
+  right: 0%;
+  top: 96.93%;
+  bottom: 0%;
+}
+
+.Pixso-paragraph-130_1817 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  width: 4.375rem;
+  height: auto;
+  position: absolute;
+  left: 1.0625rem;
+  top: 4.4375rem;
+}
+
+.Pixso-paragraph-130_1818 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 1.0625rem;
+  top: 5.375rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-vector-130_1819 {
+  width: 0;
+  height: 0;
+  background-image: url(../image/Vector_130_1819.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 4.0625rem;
+  top: 8.812447rem;
+}
+
+.Pixso-group-130_1820 {
+  width: 11.561302rem;
+  height: 272.953186rem;
+  position: absolute;
+  left: 35.8125rem;
+  top: 0.125rem;
+}
+
+.Pixso-rectangle-130_1821 {
+  width: 8.125rem;
+  height: 7.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1.1875rem 1.1875rem 1.1875rem 1.1875rem;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25) ;
+  background-color: rgba(255, 255, 255, 0.15000000596046448);
+  transition: background-color 0.45s ease;
+}
+
+.Pixso-rectangle-130_1796::after,
+.Pixso-rectangle-130_1802::after,
+.Pixso-rectangle-130_1808::after,
+.Pixso-rectangle-130_1814::after,
+.Pixso-rectangle-130_1821::after {
+  content: "";
+  width: 1.375rem;
+  height: 1.375rem;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-image: url(../image/Vector_141_70.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.Pixso-rectangle-130_1796.hero-card-active::after,
+.Pixso-rectangle-130_1802.hero-card-active::after,
+.Pixso-rectangle-130_1808.hero-card-active::after,
+.Pixso-rectangle-130_1814.hero-card-active::after,
+.Pixso-rectangle-130_1821.hero-card-active::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.Pixso-vector-130_1822 {
+  width: 14.9%;
+  height: 3.07%;
+  background-image: url(../image/Frame_130_1822.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 85.1%;
+  right: 0%;
+  top: 96.93%;
+  bottom: 0%;
+}
+
+.Pixso-paragraph-130_1824 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0.875rem;
+  top: 4.625rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1825 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0.875rem;
+  top: 5.5625rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1844 {
+  font-size: 1.5rem;
+  font-family: "Inter-Light";
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  width: 35.0625rem;
+  height: auto;
+  position: absolute;
+  left: 3.1875rem;
+  top: 10rem;
+}
+
+.Pixso-paragraph-141_137 {
+  font-size: 1.5rem;
+  font-family: "Inter-Light";
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  width: 35.8125rem;
+  height: auto;
+  position: absolute;
+  left: 3.1875rem;
+  top: 33.5rem;
+}
+
+.Pixso-group-130_1860 {
+  width: 90.9375rem;
+  height: 20.5625rem;
+  position: absolute;
+  left: 17.6875rem;
+  top: 220.3125rem;
+}
+
+.Pixso-group-130_1861 {
+  width: 21.75rem;
+  height: 20.5625rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-vector-130_1862 {
+  width: 21.75rem;
+  height: 20.5625rem;
+  background-image: url(../image/Vector_130_1862.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-text-130_1863 {
+  font-size: 2rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: SemiBold;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 2.375rem;
+  top: 5.4375rem;
+  white-space: nowrap;
+  flex-grow: 0;
+  -webkit-text-stroke: 0.0625rem transparent;
+  -webkit-background-clip: text;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.Pixso-paragraph-130_1863_0 {
+  line-height: 2.438rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1863_0_1 {
+  font-size: 2rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-paragraph-130_1863_1 {
+  line-height: 2.438rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1863_1_1 {
+  font-size: 2rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-text-130_1864 {
+  font-size: 1.3125rem;
+  font-family: "Montserrat-Medium";
+  font-weight: Medium;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 2.3125rem;
+  top: 11.3125rem;
+  white-space: nowrap;
+  flex-grow: 0;
+  -webkit-text-stroke: 0.0625rem transparent;
+  -webkit-background-clip: text;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.Pixso-paragraph-130_1864_0 {
+  line-height: 1.599937rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1864_0_1 {
+  font-size: 1.3125rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-paragraph-130_1864_1 {
+  line-height: 1.599937rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1864_1_1 {
+  font-size: 1.3125rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-paragraph-130_1865 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 1.8125rem;
+  top: 1.375rem;
+  white-space: pre;
+  flex-grow: 0;
+  -webkit-text-stroke: 0.0625rem transparent;
+  -webkit-background-clip: text;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.Pixso-group-130_1866 {
+  width: 21.75rem;
+  height: 20.5625rem;
+  position: absolute;
+  left: 69.1875rem;
+  top: 0;
+}
+
+.Pixso-vector-130_1867 {
+  width: 21.75rem;
+  height: 20.5625rem;
+  background-image: url(../image/Vector_130_1867.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-paragraph-130_1868 {
+  font-size: 2rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 2.3125rem;
+  top: 5.375rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1869 {
+  font-size: 1.3125rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: 16.0625rem;
+  height: auto;
+  position: absolute;
+  left: 2.3125rem;
+  top: 11.1875rem;
+}
+
+.Pixso-paragraph-130_1870 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 1.8125rem;
+  top: 1.375rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-group-130_1871 {
+  width: 21.75rem;
+  height: 20.5625rem;
+  position: absolute;
+  left: 46.125rem;
+  top: 0;
+}
+
+.Pixso-vector-130_1872 {
+  width: 21.75rem;
+  height: 20.5625rem;
+  background-image: url(../image/Vector_130_1872.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-paragraph-130_1873 {
+  font-size: 2rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 2.3125rem;
+  top: 5.375rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1874 {
+  font-size: 1.3125rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 2.3125rem;
+  top: 11.1875rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1875 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 1.8125rem;
+  top: 1.375rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-group-130_1876 {
+  width: 21.75rem;
+  height: 20.5625rem;
+  position: absolute;
+  left: 23.0625rem;
+  top: 0;
+}
+
+.Pixso-vector-130_1877 {
+  width: 21.75rem;
+  height: 20.5625rem;
+  background-image: url(../image/Vector_130_1877.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-paragraph-130_1878 {
+  font-size: 2rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 2.3125rem;
+  top: 5.375rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1879 {
+  font-size: 1.3125rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 2.3125rem;
+  top: 11.3125rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1880 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 1.8125rem;
+  top: 1.375rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-group-141_51 {
+  width: 106.25rem;
+  height: 40.125rem;
+  position: absolute;
+  left: 8.0625rem;
+  top: 256.9375rem;
+  z-index: 40;
+}
+
+.Pixso-group-141_61 {
+  width: 44.852859rem;
+  height: 7.439971rem;
+  position: absolute;
+  left: 0.125rem;
+  top: 28.375rem;
+}
+
+.Pixso-rectangle-141_62 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10.75rem 10.75rem 10.75rem 10.75rem;
+}
+
+.stroke-wrapper-141_62 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44.852859rem;
+  height: 7.439971rem;
+}
+
+.stroke-141_62 {
+  position: absolute;
+  inset: 0;
+  border-radius: 10.75rem 10.75rem 10.75rem 10.75rem;
+  pointer-events: none;
+  border-width: 0.1875rem 0.1875rem 0.1875rem 0.1875rem;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: rgba(33, 205, 0, 1);
+}
+
+.Pixso-paragraph-141_63 {
+  font-size: 2.625rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 3.534091rem;
+  position: absolute;
+  left: 0;
+  top: 1.939972rem;
+  text-align: center;
+}
+
+.Pixso-group-141_68 {
+  width: 44.852859rem;
+  height: 16.200375rem;
+  position: absolute;
+  left: 0.125rem;
+  top: 10.375rem;
+}
+
+.Pixso-paragraph-141_69 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  width: 6.393919rem;
+  height: 1.812301rem;
+  position: absolute;
+  left: 19.0625rem;
+  top: 8.3125rem;
+}
+
+.Pixso-frame-141_72 {
+  width: 5.86%;
+  height: 12.15%;
+  overflow: hidden;
+  position: absolute;
+  left: 43.44%;
+  right: 50.7%;
+  top: 0%;
+  bottom: 87.85%;
+}
+
+.Pixso-group-162_14 {
+  width: 10.882567rem;
+  height: 1.954024rem;
+  position: absolute;
+  left: 7.5625rem;
+  top: 10.3125rem;
+}
+
+.Pixso-vector-141_71 {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../image/Vector_141_71.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-paragraph-141_73 {
+  font-size: 1.25rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  width: 8.30255rem;
+  height: 1.812301rem;
+  position: absolute;
+  left: 3.25rem;
+  top: 0.141724rem;
+}
+
+.Pixso-group-162_13 {
+  width: 9.696636rem;
+  height: 1.812301rem;
+  position: absolute;
+  left: 27.625rem;
+  top: 10.5rem;
+}
+
+.Pixso-vector-141_70 {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../image/Vector_141_71.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.radio-real-input:checked + .Pixso-vector-141_71,
+.radio-real-input:checked + .Pixso-vector-141_70 {
+  background-image: url(../image/Vector_141_70.png);
+  background-size: 1.5rem 1.5rem;
+  background-position: center 0.0625rem;
+}
+
+.Pixso-paragraph-141_74 {
+  font-size: 1.25rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  width: 7.729961rem;
+  height: 1.812301rem;
+  position: absolute;
+  left: 3.25rem;
+  top: 0;
+}
+
+.Pixso-paragraph-141_75 {
+  font-size: 0.875rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  width: 44.852859rem;
+  height: 2.575375rem;
+  position: absolute;
+  left: 0;
+  top: 13.625rem;
+}
+
+.Pixso-group-141_53 {
+  width: 21.843752rem;
+  height: 4.875rem;
+  position: absolute;
+  left: 0;
+  top: 5.875rem;
+  z-index: 20;
+  border-radius: 1rem;
+}
+
+.Pixso-group-141_53::after {
+  content: "000 000 00 00";
+  position: absolute;
+  left: 5.375rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255,255,255,0.35);
+  font-family: "Montserrat-SemiBold";
+  font-size: 1.5rem;
+  font-weight: 600;
+  pointer-events: none;
+  z-index: 25;
+}
+
+.Pixso-group-141_53.phone-has-value::after {
+  opacity: 0;
+}
+
+.Pixso-rectangle-141_55 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+  pointer-events: none;
+}
+
+.Pixso-paragraph-141_56 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  width: 18.3125rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 2.8125rem;
+  top: 1.510483rem;
+  opacity: 0.5;
+}
+
+.Pixso-group-141_57 {
+  width: 44.687504rem;
+  height: 4.875rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  border-radius: 1rem;
+}
+
+.Pixso-paragraph-141_60 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  width: 5.694177rem;
+  height: 2.861527rem;
+  position: absolute;
+  left: 2.416195rem;
+  top: 1.365112rem;
+  -webkit-text-stroke: 0.0625rem transparent;
+  -webkit-background-clip: text;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.Pixso-rectangle-162_2 {
+  width: 44.687504rem;
+  height: 4.875rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+  pointer-events: none;
+}
+
+.Pixso-group-141_64 {
+  width: 21.843752rem;
+  height: 4.875rem;
+  position: absolute;
+  left: 22.843752rem;
+  top: 5.875rem;
+  z-index: 20;
+  border-radius: 1rem;
+}
+
+.Pixso-rectangle-141_66 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+  pointer-events: none;
+}
+
+.Pixso-paragraph-141_67 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  width: 18.3125rem;
+  height: 1.8125rem;
+  position: absolute;
+  left: 3.181763rem;
+  top: 1.510483rem;
+}
+
+.Pixso-group-141_83 {
+  width: 44.687504rem;
+  height: 4.8125rem;
+  min-height: 4.8125rem;
+  position: absolute;
+  left: 0;
+  top: 11.75rem;
+  z-index: 20;
+  border-radius: 1rem;
+  transition: height 0.25s ease;
+}
+
+.Pixso-rectangle-141_85 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+  pointer-events: none;
+}
+
+.Pixso-paragraph-141_86 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  width: 16.623497rem;
+  height: 2.875rem;
+  position: absolute;
+  left: 1.959424rem;
+  top: 1.4375rem;
+}
+
+.Pixso-group-162_15 {
+  width: 56rem;
+  height: 40.125rem;
+  position: absolute;
+  left: 50.25rem;
+  top: 0;
+}
+
+.Pixso-rectangle-162_16 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 1.375rem 1.375rem 1.375rem 1.375rem;
+  background-size: 135.3266% 113.1532%;
+  background-position: -16.1025rem -2.756875rem;
+  background-repeat: no-repeat;
+  background-image: url(../image/58b4c60ed1b87d96a35852ee2cec525ee7432330.png);
+}
+
+.stroke-wrapper-162_16 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 56rem;
+  height: 34.775002rem;
+}
+
+.stroke-162_16 {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.375rem 1.375rem 1.375rem 1.375rem;
+  pointer-events: none;
+  border-width: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.Pixso-text-162_17 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: Regular;
+  color: rgba(255, 255, 255, 1);
+  width: 53.773098rem;
+  height: 3.4775rem;
+  position: absolute;
+  left: 0.45848rem;
+  top: 36.647499rem;
+}
+
+.Pixso-paragraph-162_17_0 {
+  line-height: 1.8285rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-162_17_0_1 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-162_17_0_2 {
+  font-size: 1.25rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-group-130_1853 {
+  width: 114.3125rem;
+  height: 63.9375rem;
+  position: absolute;
+  left: 3.0625rem;
+  top: 151.25rem;
+}
+
+.Pixso-rectangle-130_1854 {
+  width: 49.1875rem;
+  height: 47.125rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1.875rem 1.875rem 1.875rem 20.625rem;
+  filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+  background-size: 100.0000% 139.1689%;
+  background-position: 0 -7.416875rem;
+  background-repeat: no-repeat;
+  background-image: url(../image/918bb360aaa4881b71584ae9d96f592a1cf0de2f.png);
+}
+
+.Pixso-paragraph-130_1855 {
+  font-size: 3.4375rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 55.75rem;
+  top: 0;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1856 {
+  font-size: 3rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 30.6875rem;
+  top: 56.625rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1857 {
+  font-size: 1.875rem;
+  font-family: "Inter-Light";
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  width: 52.625rem;
+  height: auto;
+  position: absolute;
+  left: 55.75rem;
+  top: 5.3125rem;
+}
+
+.Pixso-paragraph-130_1858 {
+  font-size: 1.875rem;
+  font-family: "Inter-Light";
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: 58.5625rem;
+  height: auto;
+  position: absolute;
+  left: 55.75rem;
+  top: 16.8125rem;
+}
+
+.Pixso-vector-130_1859 {
+  position: absolute;
+  inset: -121.52661800959541% -7.251433376567277% -121.52661800959541% -7.251433376567277% ;
+  background-image: url(../image/Vector_130_1859.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.vector-wrapper-130_1859 {
+  position: absolute;
+  left: 60.385313rem;
+  top: 35.430899rem;
+  width: 33.955326rem;
+  height: 6.79052rem;
+}
+
+.Pixso-group-156_15 {
+  width: 19.5625rem;
+  height: 3.75rem;
+  position: absolute;
+  left: 56.0625rem;
+  top: 29rem;
+}
+
+.Pixso-vector-156_16 {
+  position: absolute;
+  inset: -76.66666666666667% -14.696485623003195% -76.66666666666667% -14.696485623003195% ;
+  background-image: url(../image/Vector_156_16.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.vector-wrapper-156_16 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 19.5625rem;
+  height: 3.75rem;
+}
+
+.Pixso-paragraph-156_17 {
+  font-size: 1.25rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: 16.818979rem;
+  height: 1.375rem;
+  position: absolute;
+  left: 1.729611rem;
+  top: 1.1875rem;
+}
+
+.Pixso-group-130_1845 {
+  width: 113.09375rem;
+  height: 38rem;
+  position: absolute;
+  left: 3.53125rem;
+  top: 111.875rem;
+}
+
+.Pixso-rectangle-130_1850 {
+  width: 52.75rem;
+  height: 33.875rem;
+  position: absolute;
+  left: 60.34375rem;
+  top: 0;
+  border-radius: 1.875rem 20.625rem 1.875rem 1.875rem;
+  background-size: 100.0000% 100.5671%;
+  background-position: 0 -0.191875rem;
+  background-repeat: no-repeat;
+  background-image: url(../image/3dcfc84539427043b48f3fd8474c4d670060a2e9.png);
+}
+
+.Pixso-group-162_22 {
+  width: 52.40625rem;
+  height: 38rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-paragraph-130_1846 {
+  font-size: 3.4375rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-text-130_1847 {
+  font-size: 1.875rem;
+  font-family: "Inter-Medium";
+  font-weight: Medium;
+  color: rgba(255, 255, 255, 1);
+  width: 52.0625rem;
+  height: auto;
+  position: absolute;
+  left: 0.28125rem;
+  top: 5.8125rem;
+}
+
+.Pixso-paragraph-130_1847_0 {
+  line-height: 2.269176rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1847_0_1 {
+  font-size: 1.875rem;
+  font-family: "Inter-Light";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1847_0_2 {
+  font-size: 1.875rem;
+  font-family: "Inter-Bold";
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1847_0_3 {
+  font-size: 1.875rem;
+  font-family: "Inter-Light";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-paragraph-130_1847_1 {
+  line-height: 2.269176rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1847_1_1 {
+  font-size: 1.875rem;
+  font-family: "Inter-Light";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-wrap;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1847_1_2 {
+  font-size: 1.875rem;
+  font-family: "Inter-Medium";
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-text-130_1848 {
+  font-size: 1.875rem;
+  font-family: "Inter-Medium";
+  font-weight: Medium;
+  color: rgba(255, 255, 255, 1);
+  width: 52.0625rem;
+  height: auto;
+  position: absolute;
+  left: 0.28125rem;
+  top: 15.25rem;
+}
+
+.Pixso-paragraph-130_1848_0 {
+  line-height: 2.269176rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1848_0_1 {
+  font-size: 1.875rem;
+  font-family: "Inter-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1848_0_2 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1848_0_3 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-text-130_1849 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: Regular;
+  color: rgba(255, 255, 255, 1);
+  width: 52.0625rem;
+  height: 11.5625rem;
+  position: absolute;
+  left: 0.34375rem;
+  top: 25.1875rem;
+}
+
+.Pixso-paragraph-130_1849_0 {
+  line-height: 2.285625rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1849_0_1 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1849_0_2 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-span-130_1849_0_3 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.Pixso-vector-156_11 {
+  width: 29rem;
+  height: 0.09375rem;
+  background-image: url(../image/Vector_156_11.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 18.21875rem;
+  top: 23.3125rem;
+}
+
+.Pixso-vector-156_12 {
+  width: 13.375rem;
+  height: 0.09375rem;
+  background-image: url(../image/Vector_156_12.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0.34375rem;
+  top: 23.3125rem;
+}
+
+.Pixso-vector-156_13 {
+  width: 24.75rem;
+  height: 0.09375rem;
+  background-image: url(../image/Vector_156_13.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 26.28125rem;
+  top: 13.4375rem;
+}
+
+.Pixso-vector-156_14 {
+  width: 22.125rem;
+  height: 0.09375rem;
+  background-image: url(../image/Vector_156_14.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0.09375rem;
+  top: 13.4375rem;
+}
+
+.Pixso-group-156_9 {
+  width: 50.125rem;
+  height: 27.25rem;
+  position: absolute;
+  left: 64.1875rem;
+  top: 74.4375rem;
+}
+
+.Pixso-group-130_1830 {
+  width: 50.125rem;
+  height: 27.25rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-paragraph-130_1832 {
+  font-size: 3.4375rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0.25rem;
+  top: 0;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1833 {
+  font-size: 2.1875rem;
+  font-family: "Inter-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-wrap;
+  width: 46.8125rem;
+  height: auto;
+  position: absolute;
+  left: 0.4375rem;
+  top: 6.25rem;
+}
+
+.Pixso-group-130_1834 {
+  width: 50.125rem;
+  height: 6.8125rem;
+  position: absolute;
+  left: 0;
+  top: 20.4375rem;
+}
+
+.Pixso-paragraph-130_1835 {
+  font-size: 3.4375rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(33, 205, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0.3125rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1836 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 4.5rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-group-130_1837 {
+  width: 15.75rem;
+  height: 6.5rem;
+  position: absolute;
+  left: 34.375rem;
+  top: 0.3125rem;
+}
+
+.Pixso-paragraph-130_1838 {
+  font-size: 3.4375rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(33, 205, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1839 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 4.1875rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-group-130_1840 {
+  width: 12.625rem;
+  height: 6.8125rem;
+  position: absolute;
+  left: 17.4375rem;
+  top: 0;
+}
+
+.Pixso-paragraph-130_1841 {
+  font-size: 3.4375rem;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  color: rgba(33, 205, 0, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-130_1842 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0.1875rem;
+  top: 4.5rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-vector-130_1843 {
+  width: 0.0625rem;
+  height: 4.8125rem;
+  background-image: url(../image/Line_130_1843.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 31.75rem;
+  top: 0.625rem;
+}
+
+.Pixso-vector-130_1829 {
+  width: 0.0625rem;
+  height: 4.8125rem;
+  background-image: url(../image/Line_130_1829.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 14.9375rem;
+  top: 0.625rem;
+}
+
+.Pixso-vector-156_18 {
+  width: 0.832642rem;
+  height: 1.062725rem;
+  background-image: url(../image/Vector_156_18.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 76.5rem;
+  top: 181.625rem;
+}
+
+.Pixso-group-152_1 {
+  width: 109.979187rem;
+  height: 83.75rem;
+  position: absolute;
+  left: 8.125rem;
+  top: 248.125rem;
+}
+
+.Pixso-group-141_87 {
+  width: 109.979187rem;
+  height: 83.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-group-141_97 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 27.6875rem;
+  top: 58.8125rem;
+}
+
+.Pixso-rectangle-141_99 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+}
+
+.Pixso-paragraph-141_100 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: 5.101604rem;
+  height: 2.618976rem;
+  position: absolute;
+  left: 2.409091rem;
+  top: 1.486446rem;
+}
+
+.Pixso-paragraph-141_101 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: 21.894386rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.409091rem;
+  top: 4.813253rem;
+}
+
+.Pixso-paragraph-141_102 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  width: 15.51738rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.409091rem;
+  top: 7.503012rem;
+}
+
+.Pixso-group-141_103 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 83.479187rem;
+  top: 72rem;
+}
+
+.Pixso-rectangle-162_44 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+}
+
+.Pixso-paragraph-141_106 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: 6.889205rem;
+  height: 2.618976rem;
+  position: absolute;
+  left: 2.333313rem;
+  top: 1.8125rem;
+}
+
+.Pixso-paragraph-141_107 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: 17.116478rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.333313rem;
+  top: 5.139313rem;
+}
+
+.Pixso-paragraph-141_108 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  width: 15.553977rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.333313rem;
+  top: 7.829071rem;
+}
+
+.Pixso-group-141_109 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 55.583313rem;
+  top: 72rem;
+}
+
+.Pixso-rectangle-162_45 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+}
+
+.Pixso-paragraph-141_112 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: 6.872995rem;
+  height: 2.618976rem;
+  position: absolute;
+  left: 2.416687rem;
+  top: 1.8125rem;
+}
+
+.Pixso-paragraph-141_113 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: 21.894386rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.416687rem;
+  top: 5.139313rem;
+}
+
+.Pixso-paragraph-141_114 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  width: 15.51738rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.416687rem;
+  top: 7.829071rem;
+}
+
+.Pixso-group-141_115 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 27.6875rem;
+  top: 72rem;
+}
+
+.Pixso-rectangle-162_37 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+}
+
+.Pixso-paragraph-141_118 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: 9.423798rem;
+  height: 2.618976rem;
+  position: absolute;
+  left: 2.4375rem;
+  top: 1.5rem;
+}
+
+.Pixso-paragraph-141_119 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: 11.124332rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.4375rem;
+  top: 4.826813rem;
+}
+
+.Pixso-paragraph-141_120 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  width: 15.51738rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.4375rem;
+  top: 7.516571rem;
+}
+
+.Pixso-group-141_121 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 83.479187rem;
+  top: 58.8125rem;
+}
+
+.Pixso-rectangle-162_41 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+}
+
+.Pixso-paragraph-141_124 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: 7.102273rem;
+  height: 2.618976rem;
+  position: absolute;
+  left: 2.333313rem;
+  top: 1.5rem;
+}
+
+.Pixso-paragraph-141_125 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: 21.946022rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.333313rem;
+  top: 4.826813rem;
+}
+
+.Pixso-paragraph-141_126 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  width: 15.553977rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.333313rem;
+  top: 7.516571rem;
+}
+
+.Pixso-group-141_127 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 55.583313rem;
+  top: 58.8125rem;
+}
+
+.Pixso-rectangle-162_38 {
+  width: 26.5rem;
+  height: 11.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+}
+
+.Pixso-paragraph-141_130 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: 9.423798rem;
+  height: 2.618976rem;
+  position: absolute;
+  left: 2.416687rem;
+  top: 1.5rem;
+}
+
+.Pixso-paragraph-141_131 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: 20.973263rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.416687rem;
+  top: 4.826813rem;
+}
+
+.Pixso-paragraph-141_132 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  width: 15.51738rem;
+  height: 2.052711rem;
+  position: absolute;
+  left: 2.416687rem;
+  top: 7.516571rem;
+}
+
+.Pixso-group-141_89 {
+  width: 26.5625rem;
+  height: 24.8125rem;
+  position: absolute;
+  left: 0;
+  top: 58.8125rem;
+}
+
+.Pixso-rectangle-162_52 {
+  width: 26.5625rem;
+  height: 24.8125rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+}
+
+.Pixso-paragraph-141_92 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: 17.4375rem;
+  height: 2.311561rem;
+  position: absolute;
+  left: 4.375rem;
+  top: 2.4375rem;
+}
+
+.Pixso-paragraph-141_93 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  width: 7.75rem;
+  height: auto;
+  position: absolute;
+  left: 9.0625rem;
+  top: 6.25rem;
+}
+
+.Pixso-paragraph-141_95 {
+  font-size: 1.875rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+  width: 17.125rem;
+  height: 2.311561rem;
+  position: absolute;
+  left: 4.5rem;
+  top: 18.3125rem;
+}
+
+.Pixso-rectangle-162_25 {
+  width: 9.75rem;
+  height: 9.0625rem;
+  position: absolute;
+  left: 7.8125rem;
+  top: 7rem;
+  transform: rotateY(180deg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../image/46ad3fdcf2bd15b195d9e76bb3a84d88012de6f5.png);
+}
+
+.Pixso-group-141_133 {
+  width: 41rem;
+  height: 4.1875rem;
+  position: absolute;
+  left: 36.5625rem;
+  top: 0;
+}
+
+.Pixso-paragraph-141_136 {
+  font-size: 3.4375rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: 12.3125rem;
+  height: 3.375rem;
+  position: absolute;
+  left: 14.4375rem;
+  top: 0.125rem;
+}
+
+.Pixso-vector-141_79 {
+  width: 11.59%;
+  height: 98.51%;
+  background-image: url(../image/Vector_141_79.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 17.53%;
+  right: 70.88%;
+  top: 1.49%;
+  bottom: 0%;
+}
+
+.Pixso-vector-141_82 {
+  width: 10.68%;
+  height: 98.15%;
+  background-image: url(../image/Vector_141_82.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0%;
+  right: 89.32%;
+  top: 1.49%;
+  bottom: 0.36%;
+}
+
+.Pixso-rectangle-141_80 {
+  width: 4.25rem;
+  height: 4.1875rem;
+  position: absolute;
+  left: 36.75rem;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../image/01f536326e97acf7660b4c45bc4195809a857167.png);
+}
+
+.Pixso-rectangle-141_81 {
+  width: 4.375rem;
+  height: 3.375rem;
+  position: absolute;
+  left: 29.5625rem;
+  top: 0.4375rem;
+  background-size: 114.2857% 148.1481%;
+  background-position: -0.5rem -0.75rem;
+  background-repeat: no-repeat;
+  background-image: url(../image/8e1a92168eefec5b6b3a7997eee327a55614ec04.png);
+}
+
+.Pixso-vector-162_34 {
+  position: absolute;
+  inset: -1200% -4.3478260869565215% -1200% -4.3478260869565215% ;
+  background-image: url(../image/Vector_162_34.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.vector-wrapper-162_34 {
+  position: absolute;
+  left: 50.1875rem;
+  top: 54.875rem;
+  width: 35.9375rem;
+  height: 0.125rem;
+}
+
+.Pixso-rectangle-162_28 {
+  width: 55.25rem;
+  height: 32.0625rem;
+  position: absolute;
+  left: 3.875rem;
+  top: 72.5rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: rgba(42, 42, 42, 1);
+}
+
+.Pixso-paragraph-162_29 {
+  font-size: 2.625rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 25.1875rem;
+  top: 85.3125rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-paragraph-162_33 {
+  font-size: 2.875rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 7.8125rem;
+  top: 301.1875rem;
+  white-space: pre;
+  flex-grow: 0;
+}
+
+.Pixso-group-130_1776 {
+  width: 110.5625rem;
+  height: 6.625rem;
+  position: absolute;
+  left: 3.1875rem;
+  top: 0;
+}
+
+.Pixso-rectangle-130_1777 {
+  width: 6.3125rem;
+  height: 6.625rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../image/46ad3fdcf2bd15b195d9e76bb3a84d88012de6f5.png);
+}
+
+.Pixso-paragraph-130_1778 {
+  font-size: 1.625rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: 14.6875rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 7.3125rem;
+  top: 2.125rem;
+}
+
+.Pixso-paragraph-130_1779 {
+  font-size: 1.625rem;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  color: rgba(255, 255, 255, 1);
+  width: 11.625rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 7.3125rem;
+  top: 4.125rem;
+}
+
+.Pixso-group-130_1780 {
+  width: 31.0625rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 44.875rem;
+  top: 2.875rem;
+}
+
+.Pixso-paragraph-130_1781 {
+  font-size: 1.125rem;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  width: 11.625rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Pixso-paragraph-130_1782 {
+  font-size: 1.125rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(125, 125, 125, 1);
+  width: 11.625rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 10.3125rem;
+  top: 0;
+}
+
+.Pixso-paragraph-130_1784 {
+  font-size: 1.125rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(125, 125, 125, 1);
+  white-space: pre-line;
+  width: 11.625rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 19.4375rem;
+  top: 0;
+}
+
+.Pixso-group-156_2 {
+  width: 14.125rem;
+  height: 3.75rem;
+  position: absolute;
+  left: 96.4375rem;
+  top: 2.875rem;
+}
+
+.Pixso-rectangle-156_3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
+}
+
+.stroke-wrapper-156_3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14.125rem;
+  height: 3.75rem;
+}
+
+.stroke-156_3 {
+  position: absolute;
+  inset: 0;
+  border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
+  pointer-events: none;
+  border-width: 0.125rem 0.125rem 0.125rem 0.125rem;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: rgba(33, 205, 0, 1);
+}
+
+.Pixso-paragraph-156_4 {
+  font-size: 1rem;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  white-space: pre-line;
+  width: 11.3125rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 1.4375rem;
+  top: 1.25rem;
+}
+
+.Pixso-vector-130_1788 {
+  width: 7rem;
+  height: 0.1875rem;
+  background-image: url(../image/Vector_130_1788.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 44.375rem;
+  top: 4.75rem;
+  transition: left 0.25s ease;
+}
+
+.Pixso-group-130_1776:has(.Pixso-paragraph-130_1781.is-active) .Pixso-vector-130_1788 {
+  left: 44.375rem;
+}
+
+.Pixso-group-130_1776:has(.Pixso-paragraph-130_1782.is-active) .Pixso-vector-130_1788 {
+  left: 54.6875rem;
+}
+
+.Pixso-group-130_1776:has(.Pixso-paragraph-130_1784.is-active) .Pixso-vector-130_1788 {
+  left: 63.8125rem;
+}
+
+.header-nav-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Montserrat-Medium" !important;
+  font-weight: 500 !important;
+  color: rgba(125, 125, 125, 1) !important;
+  transition: color 0.25s ease;
+}
+
+.header-nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.header-nav-link.is-active {
+  font-family: "Montserrat-Bold" !important;
+  font-weight: 700 !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.under-construction-page {
+  min-height: 100vh;
+  background-color: rgba(0, 2, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat-Bold", Arial, sans-serif;
+}
+
+.under-construction-header {
+  position: relative;
+  height: 6.625rem;
+}
+
+.under-construction-main {
+  min-height: calc(100vh - 6.625rem);
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.under-construction-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+
+
+/* ===== SOCIAL ICON LINKS ===== */
+.social-icon-link {
+  display: contents;
+}
+.Pixso-vector-141_79,
+.Pixso-vector-141_82,
+.Pixso-rectangle-141_80,
+.Pixso-rectangle-141_81 {
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.Pixso-vector-141_79:hover,
+.Pixso-vector-141_82:hover,
+.Pixso-rectangle-141_80:hover,
+.Pixso-rectangle-141_81:hover {
+  opacity: 0.72;
+  transform: scale(1.12);
+}
+
+/* ===== FORM INPUTS ===== */
+.form-input-field {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(255,255,255,1);
+  font-family: "Montserrat-SemiBold";
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 2.8125rem;
+  box-sizing: border-box;
+  z-index: 30;
+  cursor: text;
+  pointer-events: auto;
+}
+.form-input-field::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+.phone-input-field {
+  padding-left: 2.8125rem;
+}
+.form-textarea-field {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 4.8125rem;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(255,255,255,1);
+  font-family: "Montserrat-SemiBold";
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.5rem 2.8125rem 1rem;
+  box-sizing: border-box;
+  resize: none;
+  z-index: 30;
+  cursor: text;
+  pointer-events: auto;
+}
+.form-textarea-field::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+.comment-close-button {
+  width: 2.625rem;
+  height: 2.625rem;
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1rem;
+  z-index: 35;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(33,205,0,1);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.comment-close-button::after {
+  content: "";
+  width: 0.875rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  border-left: 0.1875rem solid rgba(255,255,255,1);
+  border-bottom: 0.1875rem solid rgba(255,255,255,1);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.comment-editing .comment-close-button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.comment-editing .form-textarea-field {
+  padding-bottom: 4rem;
+}
+
+.comment-editing .Pixso-group-141_68,
+.comment-editing .form-checkbox-wrapper,
+.comment-editing .Pixso-group-141_61 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ===== RADIO INPUTS ===== */
+.radio-real-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+  margin: 0;
+}
+.Pixso-group-162_14,
+.Pixso-group-162_13 {
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+
+/* ===== CHECKBOX ===== */
+.form-checkbox-wrapper {
+  position: absolute;
+  left: 0;
+  top: 13.625rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  cursor: pointer;
+  height: auto !important;
+  width: 44.852859rem !important;
+}
+.form-checkbox-real {
+  min-width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.1875rem;
+  accent-color: rgba(33,205,0,1);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* ===== BUTTON CURSORS ===== */
+.Pixso-group-156_2 { cursor: pointer; transition: opacity 0.25s; }
+.Pixso-group-156_2:hover { opacity: 0.8; }
+.Pixso-group-130_1790 { cursor: pointer; transition: opacity 0.25s; }
+.Pixso-group-130_1790:hover { opacity: 0.85; }
+.Pixso-group-141_61 { cursor: pointer; transition: opacity 0.2s; }
+.Pixso-group-141_61:hover { opacity: 0.85; }
+.Pixso-group-156_15 { cursor: pointer; transition: opacity 0.2s; }
+.Pixso-group-156_15:hover { opacity: 0.8; }
+
+/* ===== SCROLL ANIMATIONS ===== */
+.anim-fade-up {
+  opacity: 0;
+  transform: translateY(3.125rem);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.anim-fade-left {
+  opacity: 0;
+  transform: translateX(-3.125rem);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.anim-fade-right {
+  opacity: 0;
+  transform: translateX(3.125rem);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.anim-visible {
+  opacity: 1 !important;
+  transform: translate(0,0) !important;
+}
+.anim-counter {
+  opacity: 0;
+}
+@keyframes countUp {
+  from { opacity:0; transform:translateY(1.25rem); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.anim-counter.anim-visible {
+  animation: countUp 0.9s ease forwards;
+}
