@@ -146,13 +146,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* в”Ђв”Ђ Scroll-Р°РЅРёРјР°С†РёРё (IntersectionObserver) в”Ђв”Ђ */
   var animEls = document.querySelectorAll(
-    '.anim-fade-up, .anim-fade-left, .anim-fade-right'
+    '.anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-about-arrow, .anim-team-light'
   );
 
   var sectionObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         entry.target.classList.add('anim-visible');
+        if (entry.target.classList.contains('anim-team-light')) {
+          var teamSection = document.getElementById('team-section');
+          if (teamSection) {
+            teamSection.classList.add('team-scene-started');
+          }
+        }
         sectionObserver.unobserve(entry.target);
       }
     });
@@ -387,7 +393,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function getSectionTops() {
       var maxScroll = scrollContainer.scrollHeight - scrollContainer.clientHeight;
       var tops = [0];
-      var sectionOffset = 50;
+      var sectionOffset = 120;
       var containerRect = scrollContainer.getBoundingClientRect();
 
       sectionIds.forEach(function (id) {

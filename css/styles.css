@@ -88,14 +88,75 @@ span {
   background-image: url(../image/team-section-divider.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  opacity: 0;
+  filter: brightness(0.75);
 }
 
 .team-divider-wrapper {
   position: absolute;
-  left: 43.6875rem;
+  left: 40.375rem;
   top: 303rem;
   width: 67.625rem;
   height: 24.5625rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.team-divider-wrapper.anim-visible .team-divider-line {
+  animation:
+    realTeamLightIgnition 0.55s steps(1, end) 0.1s forwards,
+    realTeamLightSteadyGlow 3.6s ease-in-out 0.65s infinite;
+}
+
+@keyframes realTeamLightIgnition {
+  0% {
+    opacity: 0;
+    filter: brightness(0.35);
+  }
+  9% {
+    opacity: 0.5;
+    filter: brightness(0.9);
+  }
+  16% {
+    opacity: 0.04;
+    filter: brightness(0.35);
+  }
+  28% {
+    opacity: 1;
+    filter: brightness(1.55);
+  }
+  39% {
+    opacity: 0.18;
+    filter: brightness(0.62);
+  }
+  55% {
+    opacity: 0.76;
+    filter: brightness(1.18);
+  }
+  68% {
+    opacity: 0.34;
+    filter: brightness(0.78);
+  }
+  84% {
+    opacity: 0.88;
+    filter: brightness(1.12);
+  }
+  100% {
+    opacity: 0.82;
+    filter: brightness(1.04);
+  }
+}
+
+@keyframes realTeamLightSteadyGlow {
+  0%,
+  100% {
+    opacity: 0.78;
+    filter: brightness(0.98);
+  }
+  50% {
+    opacity: 0.9;
+    filter: brightness(1.12);
+  }
 }
 
 .hero-title-trees {
@@ -1454,6 +1515,14 @@ span {
   background-image: url(../image/about-arrow-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(#000 0 0);
+  mask-image: linear-gradient(#000 0 0);
+  -webkit-mask-size: 100% 0%;
+  mask-size: 100% 0%;
+  -webkit-mask-position: top;
+  mask-position: top;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 .about-arrow-wrapper {
@@ -1462,6 +1531,44 @@ span {
   top: 35.430899rem;
   width: 33.955326rem;
   height: 6.79052rem;
+}
+
+.anim-about-arrow {
+  opacity: 0;
+}
+
+.anim-about-arrow .about-arrow-icon {
+  opacity: 0;
+}
+
+.anim-about-arrow.anim-visible {
+  animation: aboutArrowWrapperReveal 0.25s ease 0.25s forwards;
+}
+
+.anim-about-arrow.anim-visible .about-arrow-icon {
+  animation: aboutArrowIconReveal 2s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards;
+}
+
+@keyframes aboutArrowWrapperReveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes aboutArrowIconReveal {
+  from {
+    opacity: 1;
+    -webkit-mask-size: 100% 0%;
+    mask-size: 100% 0%;
+  }
+  to {
+    opacity: 1;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
 }
 
 .about-more-button {
@@ -1935,31 +2042,35 @@ span {
 }
 
 .team-section {
-  width: 109.979187rem;
+  width: 107.9375rem;
   height: 83.75rem;
   position: absolute;
-  left: 8.125rem;
+  left: 4.8125rem;
   top: 248.125rem;
+  isolation: isolate;
+  z-index: 20;
 }
 
 .team-layout {
-  width: 109.979187rem;
+  width: 107.9375rem;
   height: 83.75rem;
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 2;
 }
 
 .team-card-yulia {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
-  left: 27.6875rem;
+  left: 28rem;
   top: 58.8125rem;
+  opacity: 0;
 }
 
 .team-card-yulia-bg {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
   left: 0;
@@ -2006,15 +2117,16 @@ span {
 }
 
 .team-card-olga-office {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
-  left: 83.479187rem;
+  left: 82.25rem;
   top: 72rem;
+  opacity: 0;
 }
 
 .team-card-olga-office-bg {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
   left: 0;
@@ -2061,15 +2173,16 @@ span {
 }
 
 .team-card-olga-sales {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
-  left: 55.583313rem;
+  left: 55.125rem;
   top: 72rem;
+  opacity: 0;
 }
 
 .team-card-olga-sales-bg {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
   left: 0;
@@ -2116,15 +2229,16 @@ span {
 }
 
 .team-card-natalya-accounting {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
-  left: 27.6875rem;
+  left: 28rem;
   top: 72rem;
+  opacity: 0;
 }
 
 .team-card-natalya-accounting-bg {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
   left: 0;
@@ -2171,15 +2285,16 @@ span {
 }
 
 .team-card-darya {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
-  left: 83.479187rem;
+  left: 82.25rem;
   top: 58.8125rem;
+  opacity: 0;
 }
 
 .team-card-darya-bg {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
   left: 0;
@@ -2226,15 +2341,16 @@ span {
 }
 
 .team-card-natalya-purchasing {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
-  left: 55.583313rem;
+  left: 55.125rem;
   top: 58.8125rem;
+  opacity: 0;
 }
 
 .team-card-natalya-purchasing-bg {
-  width: 26.5rem;
+  width: 25.6875rem;
   height: 11.75rem;
   position: absolute;
   left: 0;
@@ -2281,15 +2397,16 @@ span {
 }
 
 .team-card-director {
-  width: 26.5625rem;
+  width: 107.9375rem;
   height: 24.8125rem;
   position: absolute;
   left: 0;
   top: 58.8125rem;
+  overflow: hidden;
 }
 
 .team-card-director-bg {
-  width: 26.5625rem;
+  width: 100%;
   height: 24.8125rem;
   position: absolute;
   left: 0;
@@ -2348,11 +2465,90 @@ span {
   background-image: url(../image/site-logo-tree.png);
 }
 
+.team-card-yulia,
+.team-card-olga-office,
+.team-card-olga-sales,
+.team-card-natalya-accounting,
+.team-card-darya,
+.team-card-natalya-purchasing,
+.team-card-director {
+  z-index: 5;
+}
+
+.team-card-yulia-bg,
+.team-card-olga-office-bg,
+.team-card-olga-sales-bg,
+.team-card-natalya-accounting-bg,
+.team-card-darya-bg,
+.team-card-natalya-purchasing-bg,
+.team-card-director-bg {
+  z-index: 0;
+}
+
+.team-card-yulia-name,
+.team-card-yulia-role,
+.team-card-yulia-phone,
+.team-card-olga-office-name,
+.team-card-olga-office-role,
+.team-card-olga-office-phone,
+.team-card-olga-sales-name,
+.team-card-olga-sales-role,
+.team-card-olga-sales-phone,
+.team-card-natalya-accounting-name,
+.team-card-natalya-accounting-role,
+.team-card-natalya-accounting-phone,
+.team-card-darya-name,
+.team-card-darya-role,
+.team-card-darya-phone,
+.team-card-natalya-purchasing-name,
+.team-card-natalya-purchasing-role,
+.team-card-natalya-purchasing-phone,
+.team-card-director-name,
+.team-card-director-role,
+.team-card-director-phone,
+.team-card-director-photo {
+  z-index: 1;
+}
+
+.team-section.team-scene-started .team-card-director {
+  animation: directorCardCollapse 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.78s forwards;
+}
+
+.team-section.team-scene-started .team-card-yulia,
+.team-section.team-scene-started .team-card-olga-office,
+.team-section.team-scene-started .team-card-olga-sales,
+.team-section.team-scene-started .team-card-natalya-accounting,
+.team-section.team-scene-started .team-card-darya,
+.team-section.team-scene-started .team-card-natalya-purchasing {
+  animation: teamEmployeeCardsReveal 0.65s ease 1.05s forwards;
+}
+
+@keyframes directorCardCollapse {
+  from {
+    width: 107.9375rem;
+  }
+  to {
+    width: 26.5625rem;
+  }
+}
+
+@keyframes teamEmployeeCardsReveal {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .social-links-section {
   width: 41rem;
   height: 4.1875rem;
   position: absolute;
-  left: 36.5625rem;
+  left: 50%;
+  transform: translateX(-50%);
   top: 0;
 }
 
@@ -2364,7 +2560,9 @@ span {
   width: 12.3125rem;
   height: 3.375rem;
   position: absolute;
-  left: 14.4375rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   top: 0.125rem;
 }
 
@@ -2467,7 +2665,7 @@ span {
   height: auto;
   position: absolute;
   left: 7.8125rem;
-  top: 301.1875rem;
+  top: 53.0625rem;
   white-space: pre;
   flex-grow: 0;
 }
