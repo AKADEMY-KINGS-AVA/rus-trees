@@ -1265,7 +1265,7 @@ span {
   width: 56rem;
   height: 40.125rem;
   position: absolute;
-  left: 50.25rem;
+  left: 47.875rem;
   top: 0;
 }
 
@@ -1286,6 +1286,43 @@ span {
   top: 0;
   width: 56rem;
   height: 34.775002rem;
+  overflow: hidden;
+  border-radius: 1.375rem;
+  background-color: rgba(107, 107, 107, 0.10999999940395355);
+}
+
+.office-address-map-frame {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+.office-address-map-link {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 12.5rem;
+  height: 3.25rem;
+  padding: 0 1.5rem;
+  border-radius: 2rem;
+  background: rgba(33, 205, 0, 0.95);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat-SemiBold";
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.24);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.office-address-map-link:hover {
+  opacity: 0.9;
+  transform: translateY(-0.125rem);
 }
 
 .office-address-stroke {
@@ -1510,8 +1547,8 @@ span {
 
 .quality-guarantee-text {
   font-size: 1.875rem;
-  font-family: "Inter-Medium";
-  font-weight: Medium;
+  font-family: "Montserrat-Regular";
+  font-weight: 500;
   color: rgba(255, 255, 255, 1);
   width: 52.0625rem;
   height: auto;
@@ -1528,7 +1565,7 @@ span {
 
 .quality-guarantee-prefix {
   font-size: 1.875rem;
-  font-family: "Inter-Light";
+  font-family: "Montserrat-Regular";
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
   position: relative;
@@ -1537,8 +1574,8 @@ span {
 
 .quality-guarantee-highlight {
   font-size: 1.875rem;
-  font-family: "Inter-Bold";
-  font-weight: 300;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
   color: rgba(255, 255, 255, 1);
   position: relative;
   flex-shrink: 0;
@@ -1546,8 +1583,8 @@ span {
 
 .quality-guarantee-space {
   font-size: 1.875rem;
-  font-family: "Inter-Light";
-  font-weight: 700;
+  font-family: "Montserrat-Regular";
+  font-weight: 500;
   color: rgba(255, 255, 255, 1);
   position: relative;
   flex-shrink: 0;
@@ -1561,7 +1598,7 @@ span {
 
 .quality-guarantee-details {
   font-size: 1.875rem;
-  font-family: "Inter-Light";
+  font-family: "Montserrat-Regular";
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
   white-space: pre-wrap;
@@ -1571,8 +1608,8 @@ span {
 
 .quality-guarantee-trailing-space {
   font-size: 1.875rem;
-  font-family: "Inter-Medium";
-  font-weight: 300;
+  font-family: "Montserrat-Regular";
+  font-weight: 500;
   color: rgba(255, 255, 255, 1);
   position: relative;
   flex-shrink: 0;
