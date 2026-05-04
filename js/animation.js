@@ -72,6 +72,25 @@ function shakeField(el) {
 /* в”Ђв”Ђ Р“Р»Р°РІРЅС‹Р№ init в”Ђв”Ђ */
 document.addEventListener('DOMContentLoaded', function () {
 
+  var scrollToTopButton = document.getElementById('scroll-to-top-button');
+  var topScrollContainer = document.querySelector('.scroll-container');
+  if (scrollToTopButton && topScrollContainer) {
+    function updateScrollToTopButton() {
+      if (topScrollContainer.scrollTop > 500) {
+        scrollToTopButton.classList.add('is-visible');
+      } else {
+        scrollToTopButton.classList.remove('is-visible');
+      }
+    }
+
+    scrollToTopButton.addEventListener('click', function () {
+      topScrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    topScrollContainer.addEventListener('scroll', updateScrollToTopButton, { passive: true });
+    updateScrollToTopButton();
+  }
+
   var siteHeader = document.querySelector('.site-header');
   if (siteHeader) {
     var navLine = siteHeader.querySelector('.site-header-active-link-line');
