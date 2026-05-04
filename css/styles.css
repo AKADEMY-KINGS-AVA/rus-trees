@@ -1,4 +1,4 @@
-* {
+﻿* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@ ol li::marker, ul li::before {
   width: 100%;
 }
 
-.Pixso-canvas-0_1 > div {
+.page-canvas > div {
   width: 100%;
 }
 
@@ -53,14 +53,14 @@ span {
   scroll-behavior: smooth;
 }
 
-.Pixso-canvas-0_1 {
+.page-canvas {
   width: 100%;
   height: 100%;
   position: relative;
   flex-shrink: 0;
 }
 
-.Pixso-frame-130_1772 {
+.home-page-frame {
   width: 100%;
   height: 380.75rem;
   overflow: hidden;
@@ -69,7 +69,7 @@ span {
   background-color: rgba(0, 2, 0, 1);
 }
 
-.Pixso-rectangle-162_66 {
+.hero-background-image {
   width: 120rem;
   height: 67.5625rem;
   position: absolute;
@@ -78,19 +78,19 @@ span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../image/94dd3af7ccd5b9e3a58a4d5fc761d424a05a6efd.png);
+  background-image: url(../image/hero-nursery-background.png);
   opacity: 0.6200000047683716;
 }
 
-.Pixso-vector-162_35 {
+.team-divider-line {
   position: absolute;
   inset: -9.16030534351145% -3.3271719038817005% -9.16030534351145% -3.3271719038817005% ;
-  background-image: url(../image/Vector_162_35.png);
+  background-image: url(../image/team-section-divider.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-.vector-wrapper-162_35 {
+.team-divider-wrapper {
   position: absolute;
   left: 43.6875rem;
   top: 303rem;
@@ -98,7 +98,7 @@ span {
   height: 24.5625rem;
 }
 
-.Pixso-paragraph-130_1773 {
+.hero-title-trees {
   font-size: 6.6875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -112,7 +112,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1774 {
+.hero-title-russian {
   font-size: 6.6875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -125,7 +125,7 @@ span {
   top: 10.96875rem;
 }
 
-.Pixso-paragraph-130_1775 {
+.hero-subtitle-benefits {
   font-size: 2.25rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -139,10 +139,10 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-vector-130_1789 {
+.hero-short-divider {
   width: 4.5625rem;
   height: 0.0625rem;
-  background-image: url(../image/Line_130_1789.png);
+  background-image: url(../image/hero-title-divider.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -150,7 +150,7 @@ span {
   top: 32.125rem;
 }
 
-.Pixso-group-130_1790 {
+.hero-catalog-button {
   width: 18.0625rem;
   height: 3.75rem;
   position: absolute;
@@ -160,7 +160,7 @@ span {
   text-decoration: none;
 }
 
-.Pixso-rectangle-130_1791 {
+.hero-catalog-button-fill {
   width: 100%;
   height: 100%;
   position: relative;
@@ -168,7 +168,7 @@ span {
   background-color: rgba(44, 117, 27, 1);
 }
 
-.stroke-wrapper-130_1791 {
+.hero-catalog-button-bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -176,7 +176,7 @@ span {
   height: 3.75rem;
 }
 
-.stroke-130_1791 {
+.hero-catalog-button-stroke {
   position: absolute;
   inset: 0;
   border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
@@ -187,7 +187,7 @@ span {
   border-color: rgba(33, 205, 0, 1);
 }
 
-.shadow-blend-unknown-0 {
+.hero-catalog-button-inner-glow {
   position: absolute;
   inset: 0;
   box-shadow: 0 0 0.9375rem 0.25rem rgba(43, 160, 24, 1) inset;
@@ -196,7 +196,7 @@ span {
   border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
 }
 
-.shadow-blend-unknown-1 {
+.hero-catalog-button-outer-glow {
   position: absolute;
   inset: 0;
   box-shadow: 0 0 2.75rem 0 rgba(36, 163, 12, 1) ;
@@ -205,7 +205,7 @@ span {
   border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
 }
 
-.shadow-blend-unknown-2 {
+.hero-catalog-button-soft-glow {
   position: absolute;
   inset: 0;
   box-shadow: 0 0 1.0625rem 0.4375rem rgba(29, 255, 0, 0.25) inset;
@@ -214,7 +214,7 @@ span {
   border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
 }
 
-.Pixso-paragraph-130_1792 {
+.hero-catalog-button-text {
   font-size: 1rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -227,10 +227,10 @@ span {
   top: 1.25rem;
 }
 
-.Pixso-vector-130_1793 {
+.hero-catalog-button-arrow {
   width: 1.750244rem;
   height: 0.832642rem;
-  background-image: url(../image/Vector_130_1793.png);
+  background-image: url(../image/catalog-button-arrow.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -238,7 +238,7 @@ span {
   top: 1.458679rem;
 }
 
-.Pixso-group-130_1794 {
+.hero-advantage-cards {
   width: 47.373802rem;
   height: 273.078186rem;
   position: absolute;
@@ -246,7 +246,7 @@ span {
   top: 46.3125rem;
 }
 
-.Pixso-group-130_1795 {
+.hero-discount-card {
   width: 10.235645rem;
   height: 273.078186rem;
   position: absolute;
@@ -254,7 +254,7 @@ span {
   top: 0;
 }
 
-.Pixso-rectangle-130_1796 {
+.hero-discount-card-bg {
   width: 8.125rem;
   height: 7.5rem;
   position: absolute;
@@ -266,10 +266,10 @@ span {
   transition: background-color 0.45s ease;
 }
 
-.Pixso-vector-130_1797 {
+.hero-discount-card-icon {
   width: 16.83%;
   height: 3.07%;
-  background-image: url(../image/Frame_130_1797.png);
+  background-image: url(../image/discount-card-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -279,7 +279,7 @@ span {
   bottom: 0%;
 }
 
-.Pixso-paragraph-130_1799 {
+.hero-discount-card-title {
   font-size: 0.875rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -293,7 +293,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1800 {
+.hero-discount-card-text {
   font-size: 0.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -307,7 +307,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-group-130_1801 {
+.hero-media-card {
   width: 8.125rem;
   height: 273.078186rem;
   position: absolute;
@@ -315,7 +315,7 @@ span {
   top: 0;
 }
 
-.Pixso-rectangle-130_1802 {
+.hero-media-card-bg {
   width: 8.125rem;
   height: 7.5rem;
   position: absolute;
@@ -327,7 +327,7 @@ span {
   transition: background-color 0.45s ease;
 }
 
-.Pixso-paragraph-130_1803 {
+.hero-media-card-title {
   font-size: 0.875rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -341,7 +341,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1804 {
+.hero-media-card-text {
   font-size: 0.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -353,10 +353,10 @@ span {
   top: 5.5rem;
 }
 
-.Pixso-vector-130_1805 {
+.hero-media-card-icon {
   width: 21.2%;
   height: 3.07%;
-  background-image: url(../image/Frame_130_1805.png);
+  background-image: url(../image/media-card-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -366,7 +366,7 @@ span {
   bottom: 0%;
 }
 
-.Pixso-group-130_1807 {
+.hero-choice-help-card {
   width: 8.125rem;
   height: 273.078186rem;
   position: absolute;
@@ -374,7 +374,7 @@ span {
   top: 0;
 }
 
-.Pixso-rectangle-130_1808 {
+.hero-choice-help-card-bg {
   width: 8.125rem;
   height: 7.5rem;
   position: absolute;
@@ -386,7 +386,7 @@ span {
   transition: background-color 0.45s ease;
 }
 
-.Pixso-paragraph-130_1809 {
+.hero-choice-help-card-title {
   font-size: 0.875rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -400,10 +400,10 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-vector-130_1810 {
+.hero-choice-help-card-icon {
   width: 21.2%;
   height: 3.07%;
-  background-image: url(../image/Frame_130_1810.png);
+  background-image: url(../image/choice-help-card-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -413,7 +413,7 @@ span {
   bottom: 0%;
 }
 
-.Pixso-paragraph-130_1812 {
+.hero-choice-help-card-text {
   font-size: 0.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -427,7 +427,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-group-130_1813 {
+.hero-best-option-card {
   width: 8.953947rem;
   height: 272.953186rem;
   position: absolute;
@@ -435,7 +435,7 @@ span {
   top: 0.125rem;
 }
 
-.Pixso-rectangle-130_1814 {
+.hero-best-option-card-bg {
   width: 8.125rem;
   height: 7.5rem;
   position: absolute;
@@ -447,10 +447,10 @@ span {
   transition: background-color 0.45s ease;
 }
 
-.Pixso-vector-130_1815 {
+.hero-best-option-card-icon {
   width: 19.24%;
   height: 3.07%;
-  background-image: url(../image/Frame_130_1815.png);
+  background-image: url(../image/best-option-card-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -460,7 +460,7 @@ span {
   bottom: 0%;
 }
 
-.Pixso-paragraph-130_1817 {
+.hero-best-option-card-title {
   font-size: 0.875rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -472,7 +472,7 @@ span {
   top: 4.4375rem;
 }
 
-.Pixso-paragraph-130_1818 {
+.hero-best-option-card-text {
   font-size: 0.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -486,10 +486,10 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-vector-130_1819 {
+.hero-card-marker {
   width: 0;
   height: 0;
-  background-image: url(../image/Vector_130_1819.png);
+  background-image: url(../image/hero-card-marker.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -497,7 +497,7 @@ span {
   top: 8.812447rem;
 }
 
-.Pixso-group-130_1820 {
+.hero-deal-card {
   width: 11.561302rem;
   height: 272.953186rem;
   position: absolute;
@@ -505,7 +505,7 @@ span {
   top: 0.125rem;
 }
 
-.Pixso-rectangle-130_1821 {
+.hero-deal-card-bg {
   width: 8.125rem;
   height: 7.5rem;
   position: absolute;
@@ -517,11 +517,11 @@ span {
   transition: background-color 0.45s ease;
 }
 
-.Pixso-rectangle-130_1796::after,
-.Pixso-rectangle-130_1802::after,
-.Pixso-rectangle-130_1808::after,
-.Pixso-rectangle-130_1814::after,
-.Pixso-rectangle-130_1821::after {
+.hero-discount-card-bg::after,
+.hero-media-card-bg::after,
+.hero-choice-help-card-bg::after,
+.hero-best-option-card-bg::after,
+.hero-deal-card-bg::after {
   content: "";
   width: 1.375rem;
   height: 1.375rem;
@@ -530,26 +530,26 @@ span {
   top: 30%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  background-image: url(../image/Vector_141_70.png);
+  background-image: url(../image/company-person-radio-icon.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-.Pixso-rectangle-130_1796.hero-card-active::after,
-.Pixso-rectangle-130_1802.hero-card-active::after,
-.Pixso-rectangle-130_1808.hero-card-active::after,
-.Pixso-rectangle-130_1814.hero-card-active::after,
-.Pixso-rectangle-130_1821.hero-card-active::after {
+.hero-discount-card-bg.hero-card-active::after,
+.hero-media-card-bg.hero-card-active::after,
+.hero-choice-help-card-bg.hero-card-active::after,
+.hero-best-option-card-bg.hero-card-active::after,
+.hero-deal-card-bg.hero-card-active::after {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.08);
 }
 
-.Pixso-vector-130_1822 {
+.hero-deal-card-icon {
   width: 14.9%;
   height: 3.07%;
-  background-image: url(../image/Frame_130_1822.png);
+  background-image: url(../image/deal-card-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -559,7 +559,7 @@ span {
   bottom: 0%;
 }
 
-.Pixso-paragraph-130_1824 {
+.hero-deal-card-title {
   font-size: 0.875rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -573,7 +573,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1825 {
+.hero-deal-card-text {
   font-size: 0.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -587,7 +587,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1844 {
+.hero-company-description {
   font-size: 1.5rem;
   font-family: "Inter-Light";
   font-weight: 300;
@@ -599,7 +599,7 @@ span {
   top: 10rem;
 }
 
-.Pixso-paragraph-141_137 {
+.hero-market-experience-text {
   font-size: 1.5rem;
   font-family: "Inter-Light";
   font-weight: 300;
@@ -611,7 +611,7 @@ span {
   top: 33.5rem;
 }
 
-.Pixso-group-130_1860 {
+.services-cards-section {
   width: 90.9375rem;
   height: 20.5625rem;
   position: absolute;
@@ -619,7 +619,7 @@ span {
   top: 220.3125rem;
 }
 
-.Pixso-group-130_1861 {
+.service-growing-card {
   width: 21.75rem;
   height: 20.5625rem;
   position: absolute;
@@ -627,10 +627,10 @@ span {
   top: 0;
 }
 
-.Pixso-vector-130_1862 {
+.service-growing-card-bg {
   width: 21.75rem;
   height: 20.5625rem;
-  background-image: url(../image/Vector_130_1862.png);
+  background-image: url(../image/service-growing-card-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -638,7 +638,7 @@ span {
   top: 0;
 }
 
-.Pixso-text-130_1863 {
+.service-growing-title {
   font-size: 2rem;
   font-family: "Montserrat-SemiBold";
   font-weight: SemiBold;
@@ -650,18 +650,16 @@ span {
   top: 5.4375rem;
   white-space: nowrap;
   flex-grow: 0;
-  -webkit-text-stroke: 0.0625rem transparent;
-  -webkit-background-clip: text;
   background-color: rgba(0, 0, 0, 1);
 }
 
-.Pixso-paragraph-130_1863_0 {
+.service-growing-title-line-one {
   line-height: 2.438rem;
   position: relative;
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1863_0_1 {
+.service-growing-title-word-growing {
   font-size: 2rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -670,13 +668,13 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-paragraph-130_1863_1 {
+.service-growing-title-line-two {
   line-height: 2.438rem;
   position: relative;
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1863_1_1 {
+.service-growing-title-word-plants {
   font-size: 2rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -685,7 +683,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-text-130_1864 {
+.service-growing-description {
   font-size: 1.3125rem;
   font-family: "Montserrat-Medium";
   font-weight: Medium;
@@ -697,18 +695,16 @@ span {
   top: 11.3125rem;
   white-space: nowrap;
   flex-grow: 0;
-  -webkit-text-stroke: 0.0625rem transparent;
-  -webkit-background-clip: text;
   background-color: rgba(0, 0, 0, 1);
 }
 
-.Pixso-paragraph-130_1864_0 {
+.service-growing-description-line-one {
   line-height: 1.599937rem;
   position: relative;
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1864_0_1 {
+.service-growing-description-trees {
   font-size: 1.3125rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -717,13 +713,13 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-paragraph-130_1864_1 {
+.service-growing-description-line-two {
   line-height: 1.599937rem;
   position: relative;
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1864_1_1 {
+.service-growing-description-plants {
   font-size: 1.3125rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -732,7 +728,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-paragraph-130_1865 {
+.service-growing-number {
   font-size: 1.5rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -744,12 +740,10 @@ span {
   top: 1.375rem;
   white-space: pre;
   flex-grow: 0;
-  -webkit-text-stroke: 0.0625rem transparent;
-  -webkit-background-clip: text;
   background-color: rgba(0, 0, 0, 1);
 }
 
-.Pixso-group-130_1866 {
+.service-garden-center-card {
   width: 21.75rem;
   height: 20.5625rem;
   position: absolute;
@@ -757,10 +751,10 @@ span {
   top: 0;
 }
 
-.Pixso-vector-130_1867 {
+.service-garden-center-card-bg {
   width: 21.75rem;
   height: 20.5625rem;
-  background-image: url(../image/Vector_130_1867.png);
+  background-image: url(../image/service-garden-center-card-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -768,7 +762,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-130_1868 {
+.service-garden-center-title {
   font-size: 2rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -783,7 +777,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1869 {
+.service-garden-center-description {
   font-size: 1.3125rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -796,7 +790,7 @@ span {
   top: 11.1875rem;
 }
 
-.Pixso-paragraph-130_1870 {
+.service-garden-center-number {
   font-size: 1.5rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -810,7 +804,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-group-130_1871 {
+.service-landscaping-card {
   width: 21.75rem;
   height: 20.5625rem;
   position: absolute;
@@ -818,10 +812,10 @@ span {
   top: 0;
 }
 
-.Pixso-vector-130_1872 {
+.service-landscaping-card-bg {
   width: 21.75rem;
   height: 20.5625rem;
-  background-image: url(../image/Vector_130_1872.png);
+  background-image: url(../image/service-landscaping-card-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -829,7 +823,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-130_1873 {
+.service-landscaping-title {
   font-size: 2rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -844,7 +838,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1874 {
+.service-landscaping-description {
   font-size: 1.3125rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -859,7 +853,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1875 {
+.service-landscaping-number {
   font-size: 1.5rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -873,7 +867,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-group-130_1876 {
+.service-planting-card {
   width: 21.75rem;
   height: 20.5625rem;
   position: absolute;
@@ -881,10 +875,10 @@ span {
   top: 0;
 }
 
-.Pixso-vector-130_1877 {
+.service-planting-card-bg {
   width: 21.75rem;
   height: 20.5625rem;
-  background-image: url(../image/Vector_130_1877.png);
+  background-image: url(../image/service-planting-card-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -892,7 +886,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-130_1878 {
+.service-planting-title {
   font-size: 2rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -907,7 +901,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1879 {
+.service-planting-description {
   font-size: 1.3125rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -922,7 +916,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1880 {
+.service-planting-number {
   font-size: 1.5rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -936,7 +930,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-group-141_51 {
+.contact-form-section {
   width: 106.25rem;
   height: 40.125rem;
   position: absolute;
@@ -945,7 +939,7 @@ span {
   z-index: 40;
 }
 
-.Pixso-group-141_61 {
+.contact-form-submit-button {
   width: 44.852859rem;
   height: 7.439971rem;
   position: absolute;
@@ -953,14 +947,14 @@ span {
   top: 28.375rem;
 }
 
-.Pixso-rectangle-141_62 {
+.contact-form-submit-fill {
   width: 100%;
   height: 100%;
   position: relative;
   border-radius: 10.75rem 10.75rem 10.75rem 10.75rem;
 }
 
-.stroke-wrapper-141_62 {
+.contact-form-submit-bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -968,7 +962,7 @@ span {
   height: 7.439971rem;
 }
 
-.stroke-141_62 {
+.contact-form-submit-stroke {
   position: absolute;
   inset: 0;
   border-radius: 10.75rem 10.75rem 10.75rem 10.75rem;
@@ -979,7 +973,7 @@ span {
   border-color: rgba(33, 205, 0, 1);
 }
 
-.Pixso-paragraph-141_63 {
+.contact-form-submit-text {
   font-size: 2.625rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -992,7 +986,7 @@ span {
   text-align: center;
 }
 
-.Pixso-group-141_68 {
+.contact-person-type-section {
   width: 44.852859rem;
   height: 16.200375rem;
   position: absolute;
@@ -1000,7 +994,7 @@ span {
   top: 10.375rem;
 }
 
-.Pixso-paragraph-141_69 {
+.contact-person-type-title {
   font-size: 1.5rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1012,7 +1006,7 @@ span {
   top: 8.3125rem;
 }
 
-.Pixso-frame-141_72 {
+.contact-person-type-spacer {
   width: 5.86%;
   height: 12.15%;
   overflow: hidden;
@@ -1023,7 +1017,7 @@ span {
   bottom: 87.85%;
 }
 
-.Pixso-group-162_14 {
+.contact-person-individual-option {
   width: 10.882567rem;
   height: 1.954024rem;
   position: absolute;
@@ -1031,10 +1025,10 @@ span {
   top: 10.3125rem;
 }
 
-.Pixso-vector-141_71 {
+.contact-person-individual-icon {
   width: 2rem;
   height: 2rem;
-  background-image: url(../image/Vector_141_71.png);
+  background-image: url(../image/individual-person-radio-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1042,7 +1036,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-141_73 {
+.contact-person-individual-label {
   font-size: 1.25rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1054,7 +1048,7 @@ span {
   top: 0.141724rem;
 }
 
-.Pixso-group-162_13 {
+.contact-person-company-option {
   width: 9.696636rem;
   height: 1.812301rem;
   position: absolute;
@@ -1062,10 +1056,10 @@ span {
   top: 10.5rem;
 }
 
-.Pixso-vector-141_70 {
+.contact-person-company-icon {
   width: 2rem;
   height: 2rem;
-  background-image: url(../image/Vector_141_71.png);
+  background-image: url(../image/individual-person-radio-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1073,14 +1067,14 @@ span {
   top: 0;
 }
 
-.radio-real-input:checked + .Pixso-vector-141_71,
-.radio-real-input:checked + .Pixso-vector-141_70 {
-  background-image: url(../image/Vector_141_70.png);
+.radio-real-input:checked + .contact-person-individual-icon,
+.radio-real-input:checked + .contact-person-company-icon {
+  background-image: url(../image/company-person-radio-icon.png);
   background-size: 1.5rem 1.5rem;
   background-position: center 0.0625rem;
 }
 
-.Pixso-paragraph-141_74 {
+.contact-person-company-label {
   font-size: 1.25rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1092,7 +1086,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-141_75 {
+.contact-form-agreement-text {
   font-size: 0.875rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1104,7 +1098,7 @@ span {
   top: 13.625rem;
 }
 
-.Pixso-group-141_53 {
+.contact-phone-field {
   width: 21.843752rem;
   height: 4.875rem;
   position: absolute;
@@ -1114,7 +1108,7 @@ span {
   border-radius: 1rem;
 }
 
-.Pixso-group-141_53::after {
+.contact-phone-field::after {
   content: "000 000 00 00";
   position: absolute;
   left: 5.375rem;
@@ -1128,11 +1122,11 @@ span {
   z-index: 25;
 }
 
-.Pixso-group-141_53.phone-has-value::after {
+.contact-phone-field.phone-has-value::after {
   opacity: 0;
 }
 
-.Pixso-rectangle-141_55 {
+.contact-phone-field-bg {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1143,7 +1137,7 @@ span {
   pointer-events: none;
 }
 
-.Pixso-paragraph-141_56 {
+.legacy-contact-phone-text {
   font-size: 1.5rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1156,7 +1150,7 @@ span {
   opacity: 0.5;
 }
 
-.Pixso-group-141_57 {
+.contact-name-field {
   width: 44.687504rem;
   height: 4.875rem;
   position: absolute;
@@ -1166,7 +1160,7 @@ span {
   border-radius: 1rem;
 }
 
-.Pixso-paragraph-141_60 {
+.legacy-contact-name-placeholder {
   font-size: 1.5rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1181,7 +1175,7 @@ span {
   background-color: rgba(0, 0, 0, 1);
 }
 
-.Pixso-rectangle-162_2 {
+.contact-name-field-bg {
   width: 44.687504rem;
   height: 4.875rem;
   position: absolute;
@@ -1192,7 +1186,7 @@ span {
   pointer-events: none;
 }
 
-.Pixso-group-141_64 {
+.contact-email-field {
   width: 21.843752rem;
   height: 4.875rem;
   position: absolute;
@@ -1202,7 +1196,7 @@ span {
   border-radius: 1rem;
 }
 
-.Pixso-rectangle-141_66 {
+.contact-email-field-bg {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1213,7 +1207,7 @@ span {
   pointer-events: none;
 }
 
-.Pixso-paragraph-141_67 {
+.legacy-contact-email-placeholder {
   font-size: 1.5rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1225,7 +1219,7 @@ span {
   top: 1.510483rem;
 }
 
-.Pixso-group-141_83 {
+.contact-comment-field {
   width: 44.687504rem;
   height: 4.8125rem;
   min-height: 4.8125rem;
@@ -1237,7 +1231,7 @@ span {
   transition: height 0.25s ease;
 }
 
-.Pixso-rectangle-141_85 {
+.contact-comment-field-bg {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1248,7 +1242,7 @@ span {
   pointer-events: none;
 }
 
-.Pixso-paragraph-141_86 {
+.legacy-contact-comment-placeholder {
   font-size: 1.5rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1260,7 +1254,7 @@ span {
   top: 1.4375rem;
 }
 
-.Pixso-group-162_15 {
+.office-address-block {
   width: 56rem;
   height: 40.125rem;
   position: absolute;
@@ -1268,7 +1262,7 @@ span {
   top: 0;
 }
 
-.Pixso-rectangle-162_16 {
+.office-address-fill {
   width: 100%;
   height: 100%;
   position: relative;
@@ -1276,10 +1270,10 @@ span {
   background-size: 135.3266% 113.1532%;
   background-position: -16.1025rem -2.756875rem;
   background-repeat: no-repeat;
-  background-image: url(../image/58b4c60ed1b87d96a35852ee2cec525ee7432330.png);
+  background-image: url(../image/contact-phone-field-bg.png);
 }
 
-.stroke-wrapper-162_16 {
+.office-address-border {
   position: absolute;
   left: 0;
   top: 0;
@@ -1287,7 +1281,7 @@ span {
   height: 34.775002rem;
 }
 
-.stroke-162_16 {
+.office-address-stroke {
   position: absolute;
   inset: 0;
   border-radius: 1.375rem 1.375rem 1.375rem 1.375rem;
@@ -1298,7 +1292,7 @@ span {
   border-color: rgba(0, 0, 0, 1);
 }
 
-.Pixso-text-162_17 {
+.office-address-text {
   font-size: 1.5rem;
   font-family: "Montserrat-Regular";
   font-weight: Regular;
@@ -1310,13 +1304,13 @@ span {
   top: 36.647499rem;
 }
 
-.Pixso-paragraph-162_17_0 {
+.office-address-text_0 {
   line-height: 1.8285rem;
   position: relative;
   flex-shrink: 0;
 }
 
-.Pixso-span-162_17_0_1 {
+.office-address-text_0_1 {
   font-size: 1.5rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -1325,7 +1319,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-span-162_17_0_2 {
+.office-address-text_0_2 {
   font-size: 1.25rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -1334,7 +1328,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-group-130_1853 {
+.about-section {
   width: 114.3125rem;
   height: 63.9375rem;
   position: absolute;
@@ -1342,7 +1336,7 @@ span {
   top: 151.25rem;
 }
 
-.Pixso-rectangle-130_1854 {
+.about-section-bg {
   width: 49.1875rem;
   height: 47.125rem;
   position: absolute;
@@ -1353,10 +1347,10 @@ span {
   background-size: 100.0000% 139.1689%;
   background-position: 0 -7.416875rem;
   background-repeat: no-repeat;
-  background-image: url(../image/918bb360aaa4881b71584ae9d96f592a1cf0de2f.png);
+  background-image: url(../image/contact-text-field-bg.png);
 }
 
-.Pixso-paragraph-130_1855 {
+.about-eyebrow {
   font-size: 3.4375rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -1370,7 +1364,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1856 {
+.about-title {
   font-size: 3rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1385,7 +1379,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1857 {
+.about-description-primary {
   font-size: 1.875rem;
   font-family: "Inter-Light";
   font-weight: 300;
@@ -1397,7 +1391,7 @@ span {
   top: 5.3125rem;
 }
 
-.Pixso-paragraph-130_1858 {
+.about-description-secondary {
   font-size: 1.875rem;
   font-family: "Inter-Light";
   font-weight: 300;
@@ -1410,15 +1404,15 @@ span {
   top: 16.8125rem;
 }
 
-.Pixso-vector-130_1859 {
+.about-arrow-icon {
   position: absolute;
   inset: -121.52661800959541% -7.251433376567277% -121.52661800959541% -7.251433376567277% ;
-  background-image: url(../image/Vector_130_1859.png);
+  background-image: url(../image/about-arrow-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-.vector-wrapper-130_1859 {
+.about-arrow-wrapper {
   position: absolute;
   left: 60.385313rem;
   top: 35.430899rem;
@@ -1426,7 +1420,7 @@ span {
   height: 6.79052rem;
 }
 
-.Pixso-group-156_15 {
+.about-more-button {
   width: 19.5625rem;
   height: 3.75rem;
   position: absolute;
@@ -1434,15 +1428,15 @@ span {
   top: 29rem;
 }
 
-.Pixso-vector-156_16 {
+.about-more-button-icon {
   position: absolute;
   inset: -76.66666666666667% -14.696485623003195% -76.66666666666667% -14.696485623003195% ;
-  background-image: url(../image/Vector_156_16.png);
+  background-image: url(../image/about-more-button-arrow.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-.vector-wrapper-156_16 {
+.about-more-button-icon-wrapper {
   position: absolute;
   left: 0;
   top: 0;
@@ -1450,7 +1444,7 @@ span {
   height: 3.75rem;
 }
 
-.Pixso-paragraph-156_17 {
+.about-more-button-text {
   font-size: 1.25rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -1463,7 +1457,7 @@ span {
   top: 1.1875rem;
 }
 
-.Pixso-group-130_1845 {
+.quality-section {
   width: 113.09375rem;
   height: 38rem;
   position: absolute;
@@ -1471,7 +1465,7 @@ span {
   top: 111.875rem;
 }
 
-.Pixso-rectangle-130_1850 {
+.quality-section-bg {
   width: 52.75rem;
   height: 33.875rem;
   position: absolute;
@@ -1481,10 +1475,10 @@ span {
   background-size: 100.0000% 100.5671%;
   background-position: 0 -0.191875rem;
   background-repeat: no-repeat;
-  background-image: url(../image/3dcfc84539427043b48f3fd8474c4d670060a2e9.png);
+  background-image: url(../image/quality-section-background.png);
 }
 
-.Pixso-group-162_22 {
+.quality-content {
   width: 52.40625rem;
   height: 38rem;
   position: absolute;
@@ -1492,7 +1486,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-130_1846 {
+.quality-title {
   font-size: 3.4375rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -1507,7 +1501,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-text-130_1847 {
+.quality-guarantee-text {
   font-size: 1.875rem;
   font-family: "Inter-Medium";
   font-weight: Medium;
@@ -1519,13 +1513,13 @@ span {
   top: 5.8125rem;
 }
 
-.Pixso-paragraph-130_1847_0 {
+.quality-guarantee-line-one {
   line-height: 2.269176rem;
   position: relative;
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1847_0_1 {
+.quality-guarantee-prefix {
   font-size: 1.875rem;
   font-family: "Inter-Light";
   font-weight: 500;
@@ -1534,7 +1528,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1847_0_2 {
+.quality-guarantee-highlight {
   font-size: 1.875rem;
   font-family: "Inter-Bold";
   font-weight: 300;
@@ -1543,7 +1537,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1847_0_3 {
+.quality-guarantee-space {
   font-size: 1.875rem;
   font-family: "Inter-Light";
   font-weight: 700;
@@ -1552,13 +1546,13 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-paragraph-130_1847_1 {
+.quality-guarantee-line-two {
   line-height: 2.269176rem;
   position: relative;
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1847_1_1 {
+.quality-guarantee-details {
   font-size: 1.875rem;
   font-family: "Inter-Light";
   font-weight: 500;
@@ -1568,7 +1562,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1847_1_2 {
+.quality-guarantee-trailing-space {
   font-size: 1.875rem;
   font-family: "Inter-Medium";
   font-weight: 300;
@@ -1577,7 +1571,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-text-130_1848 {
+.quality-selection-text {
   font-size: 1.875rem;
   font-family: "Inter-Medium";
   font-weight: Medium;
@@ -1589,13 +1583,13 @@ span {
   top: 15.25rem;
 }
 
-.Pixso-paragraph-130_1848_0 {
+.quality-selection-line {
   line-height: 2.269176rem;
   position: relative;
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1848_0_1 {
+.legacy-quality-selection-highlight {
   font-size: 1.875rem;
   font-family: "Inter-Medium";
   font-weight: 500;
@@ -1605,7 +1599,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1848_0_2 {
+.quality-selection-prefix {
   font-size: 1.875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -1614,7 +1608,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1848_0_3 {
+.quality-selection-details {
   font-size: 1.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -1623,7 +1617,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-text-130_1849 {
+.quality-support-text {
   font-size: 1.875rem;
   font-family: "Montserrat-Regular";
   font-weight: Regular;
@@ -1635,13 +1629,13 @@ span {
   top: 25.1875rem;
 }
 
-.Pixso-paragraph-130_1849_0 {
+.quality-support-line {
   line-height: 2.285625rem;
   position: relative;
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1849_0_1 {
+.quality-support-prefix {
   font-size: 1.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -1650,7 +1644,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1849_0_2 {
+.quality-support-highlight {
   font-size: 1.875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -1659,7 +1653,7 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-span-130_1849_0_3 {
+.quality-support-details {
   font-size: 1.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -1668,10 +1662,10 @@ span {
   flex-shrink: 0;
 }
 
-.Pixso-vector-156_11 {
+.quality-icon-one {
   width: 29rem;
   height: 0.09375rem;
-  background-image: url(../image/Vector_156_11.png);
+  background-image: url(../image/quality-icon-selection.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1679,10 +1673,10 @@ span {
   top: 23.3125rem;
 }
 
-.Pixso-vector-156_12 {
+.quality-icon-two {
   width: 13.375rem;
   height: 0.09375rem;
-  background-image: url(../image/Vector_156_12.png);
+  background-image: url(../image/quality-icon-guarantee.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1690,10 +1684,10 @@ span {
   top: 23.3125rem;
 }
 
-.Pixso-vector-156_13 {
+.quality-icon-three {
   width: 24.75rem;
   height: 0.09375rem;
-  background-image: url(../image/Vector_156_13.png);
+  background-image: url(../image/quality-icon-care.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1701,10 +1695,10 @@ span {
   top: 13.4375rem;
 }
 
-.Pixso-vector-156_14 {
+.quality-icon-four {
   width: 22.125rem;
   height: 0.09375rem;
-  background-image: url(../image/Vector_156_14.png);
+  background-image: url(../image/quality-icon-support.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1712,7 +1706,7 @@ span {
   top: 13.4375rem;
 }
 
-.Pixso-group-156_9 {
+.experience-section {
   width: 50.125rem;
   height: 27.25rem;
   position: absolute;
@@ -1720,7 +1714,7 @@ span {
   top: 74.4375rem;
 }
 
-.Pixso-group-130_1830 {
+.experience-content {
   width: 50.125rem;
   height: 27.25rem;
   position: absolute;
@@ -1728,7 +1722,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-130_1832 {
+.experience-title {
   font-size: 3.4375rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -1742,7 +1736,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1833 {
+.experience-description {
   font-size: 2.1875rem;
   font-family: "Inter-Regular";
   font-weight: 400;
@@ -1755,7 +1749,7 @@ span {
   top: 6.25rem;
 }
 
-.Pixso-group-130_1834 {
+.experience-stats {
   width: 50.125rem;
   height: 6.8125rem;
   position: absolute;
@@ -1763,7 +1757,7 @@ span {
   top: 20.4375rem;
 }
 
-.Pixso-paragraph-130_1835 {
+.experience-years-count {
   font-size: 3.4375rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1777,7 +1771,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1836 {
+.experience-years-label {
   font-size: 1.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -1791,7 +1785,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-group-130_1837 {
+.experience-species-stat {
   width: 15.75rem;
   height: 6.5rem;
   position: absolute;
@@ -1799,7 +1793,7 @@ span {
   top: 0.3125rem;
 }
 
-.Pixso-paragraph-130_1838 {
+.experience-species-count {
   font-size: 3.4375rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1813,7 +1807,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1839 {
+.experience-species-label {
   font-size: 1.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -1827,7 +1821,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-group-130_1840 {
+.experience-sales-stat {
   width: 12.625rem;
   height: 6.8125rem;
   position: absolute;
@@ -1835,7 +1829,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-130_1841 {
+.experience-sales-count {
   font-size: 3.4375rem;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
@@ -1849,7 +1843,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-130_1842 {
+.experience-sales-label {
   font-size: 1.875rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -1863,10 +1857,10 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-vector-130_1843 {
+.experience-stats-divider-right {
   width: 0.0625rem;
   height: 4.8125rem;
-  background-image: url(../image/Line_130_1843.png);
+  background-image: url(../image/experience-stats-divider-right.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1874,10 +1868,10 @@ span {
   top: 0.625rem;
 }
 
-.Pixso-vector-130_1829 {
+.experience-stats-divider-left {
   width: 0.0625rem;
   height: 4.8125rem;
-  background-image: url(../image/Line_130_1829.png);
+  background-image: url(../image/experience-stats-divider-left.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1885,10 +1879,10 @@ span {
   top: 0.625rem;
 }
 
-.Pixso-vector-156_18 {
+.decorative-leaf-icon {
   width: 0.832642rem;
   height: 1.062725rem;
-  background-image: url(../image/Vector_156_18.png);
+  background-image: url(../image/decorative-leaf-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1896,7 +1890,7 @@ span {
   top: 181.625rem;
 }
 
-.Pixso-group-152_1 {
+.team-section {
   width: 109.979187rem;
   height: 83.75rem;
   position: absolute;
@@ -1904,7 +1898,7 @@ span {
   top: 248.125rem;
 }
 
-.Pixso-group-141_87 {
+.team-layout {
   width: 109.979187rem;
   height: 83.75rem;
   position: absolute;
@@ -1912,7 +1906,7 @@ span {
   top: 0;
 }
 
-.Pixso-group-141_97 {
+.team-card-yulia {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -1920,7 +1914,7 @@ span {
   top: 58.8125rem;
 }
 
-.Pixso-rectangle-141_99 {
+.team-card-yulia-bg {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -1930,7 +1924,7 @@ span {
   background-color: rgba(107, 107, 107, 0.10999999940395355);
 }
 
-.Pixso-paragraph-141_100 {
+.team-card-yulia-name {
   font-size: 1.875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -1942,7 +1936,7 @@ span {
   top: 1.486446rem;
 }
 
-.Pixso-paragraph-141_101 {
+.team-card-yulia-role {
   font-size: 1.5rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -1954,7 +1948,7 @@ span {
   top: 4.813253rem;
 }
 
-.Pixso-paragraph-141_102 {
+.team-card-yulia-phone {
   font-size: 1.5rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -1967,7 +1961,7 @@ span {
   top: 7.503012rem;
 }
 
-.Pixso-group-141_103 {
+.team-card-olga-office {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -1975,7 +1969,7 @@ span {
   top: 72rem;
 }
 
-.Pixso-rectangle-162_44 {
+.team-card-olga-office-bg {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -1985,7 +1979,7 @@ span {
   background-color: rgba(107, 107, 107, 0.10999999940395355);
 }
 
-.Pixso-paragraph-141_106 {
+.team-card-olga-office-name {
   font-size: 1.875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -1997,7 +1991,7 @@ span {
   top: 1.8125rem;
 }
 
-.Pixso-paragraph-141_107 {
+.team-card-olga-office-role {
   font-size: 1.5rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -2009,7 +2003,7 @@ span {
   top: 5.139313rem;
 }
 
-.Pixso-paragraph-141_108 {
+.team-card-olga-office-phone {
   font-size: 1.5rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -2022,7 +2016,7 @@ span {
   top: 7.829071rem;
 }
 
-.Pixso-group-141_109 {
+.team-card-olga-sales {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -2030,7 +2024,7 @@ span {
   top: 72rem;
 }
 
-.Pixso-rectangle-162_45 {
+.team-card-olga-sales-bg {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -2040,7 +2034,7 @@ span {
   background-color: rgba(107, 107, 107, 0.10999999940395355);
 }
 
-.Pixso-paragraph-141_112 {
+.team-card-olga-sales-name {
   font-size: 1.875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -2052,7 +2046,7 @@ span {
   top: 1.8125rem;
 }
 
-.Pixso-paragraph-141_113 {
+.team-card-olga-sales-role {
   font-size: 1.5rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -2064,7 +2058,7 @@ span {
   top: 5.139313rem;
 }
 
-.Pixso-paragraph-141_114 {
+.team-card-olga-sales-phone {
   font-size: 1.5rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -2077,7 +2071,7 @@ span {
   top: 7.829071rem;
 }
 
-.Pixso-group-141_115 {
+.team-card-natalya-accounting {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -2085,7 +2079,7 @@ span {
   top: 72rem;
 }
 
-.Pixso-rectangle-162_37 {
+.team-card-natalya-accounting-bg {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -2095,7 +2089,7 @@ span {
   background-color: rgba(107, 107, 107, 0.10999999940395355);
 }
 
-.Pixso-paragraph-141_118 {
+.team-card-natalya-accounting-name {
   font-size: 1.875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -2107,7 +2101,7 @@ span {
   top: 1.5rem;
 }
 
-.Pixso-paragraph-141_119 {
+.team-card-natalya-accounting-role {
   font-size: 1.5rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -2119,7 +2113,7 @@ span {
   top: 4.826813rem;
 }
 
-.Pixso-paragraph-141_120 {
+.team-card-natalya-accounting-phone {
   font-size: 1.5rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -2132,7 +2126,7 @@ span {
   top: 7.516571rem;
 }
 
-.Pixso-group-141_121 {
+.team-card-darya {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -2140,7 +2134,7 @@ span {
   top: 58.8125rem;
 }
 
-.Pixso-rectangle-162_41 {
+.team-card-darya-bg {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -2150,7 +2144,7 @@ span {
   background-color: rgba(107, 107, 107, 0.10999999940395355);
 }
 
-.Pixso-paragraph-141_124 {
+.team-card-darya-name {
   font-size: 1.875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -2162,7 +2156,7 @@ span {
   top: 1.5rem;
 }
 
-.Pixso-paragraph-141_125 {
+.team-card-darya-role {
   font-size: 1.5rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -2174,7 +2168,7 @@ span {
   top: 4.826813rem;
 }
 
-.Pixso-paragraph-141_126 {
+.team-card-darya-phone {
   font-size: 1.5rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -2187,7 +2181,7 @@ span {
   top: 7.516571rem;
 }
 
-.Pixso-group-141_127 {
+.team-card-natalya-purchasing {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -2195,7 +2189,7 @@ span {
   top: 58.8125rem;
 }
 
-.Pixso-rectangle-162_38 {
+.team-card-natalya-purchasing-bg {
   width: 26.5rem;
   height: 11.75rem;
   position: absolute;
@@ -2205,7 +2199,7 @@ span {
   background-color: rgba(107, 107, 107, 0.10999999940395355);
 }
 
-.Pixso-paragraph-141_130 {
+.team-card-natalya-purchasing-name {
   font-size: 1.875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -2217,7 +2211,7 @@ span {
   top: 1.5rem;
 }
 
-.Pixso-paragraph-141_131 {
+.team-card-natalya-purchasing-role {
   font-size: 1.5rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -2229,7 +2223,7 @@ span {
   top: 4.826813rem;
 }
 
-.Pixso-paragraph-141_132 {
+.team-card-natalya-purchasing-phone {
   font-size: 1.5rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -2242,7 +2236,7 @@ span {
   top: 7.516571rem;
 }
 
-.Pixso-group-141_89 {
+.team-card-director {
   width: 26.5625rem;
   height: 24.8125rem;
   position: absolute;
@@ -2250,7 +2244,7 @@ span {
   top: 58.8125rem;
 }
 
-.Pixso-rectangle-162_52 {
+.team-card-director-bg {
   width: 26.5625rem;
   height: 24.8125rem;
   position: absolute;
@@ -2260,7 +2254,7 @@ span {
   background-color: rgba(107, 107, 107, 0.10999999940395355);
 }
 
-.Pixso-paragraph-141_92 {
+.team-card-director-name {
   font-size: 1.875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -2272,7 +2266,7 @@ span {
   top: 2.4375rem;
 }
 
-.Pixso-paragraph-141_93 {
+.team-card-director-role {
   font-size: 1.5rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -2284,7 +2278,7 @@ span {
   top: 6.25rem;
 }
 
-.Pixso-paragraph-141_95 {
+.team-card-director-phone {
   font-size: 1.875rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -2297,7 +2291,7 @@ span {
   top: 18.3125rem;
 }
 
-.Pixso-rectangle-162_25 {
+.team-card-director-photo {
   width: 9.75rem;
   height: 9.0625rem;
   position: absolute;
@@ -2307,10 +2301,10 @@ span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../image/46ad3fdcf2bd15b195d9e76bb3a84d88012de6f5.png);
+  background-image: url(../image/site-logo-tree.png);
 }
 
-.Pixso-group-141_133 {
+.social-links-section {
   width: 41rem;
   height: 4.1875rem;
   position: absolute;
@@ -2318,7 +2312,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-141_136 {
+.social-links-title {
   font-size: 3.4375rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -2330,10 +2324,10 @@ span {
   top: 0.125rem;
 }
 
-.Pixso-vector-141_79 {
+.social-max-icon {
   width: 11.59%;
   height: 98.51%;
-  background-image: url(../image/Vector_141_79.png);
+  background-image: url(../image/social-max-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -2343,10 +2337,10 @@ span {
   bottom: 0%;
 }
 
-.Pixso-vector-141_82 {
+.social-vk-icon {
   width: 10.68%;
   height: 98.15%;
-  background-image: url(../image/Vector_141_82.png);
+  background-image: url(../image/social-vk-icon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -2356,7 +2350,7 @@ span {
   bottom: 0.36%;
 }
 
-.Pixso-rectangle-141_80 {
+.social-dzen-icon {
   width: 4.25rem;
   height: 4.1875rem;
   position: absolute;
@@ -2365,10 +2359,10 @@ span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../image/01f536326e97acf7660b4c45bc4195809a857167.png);
+  background-image: url(../image/social-dzen-icon.png);
 }
 
-.Pixso-rectangle-141_81 {
+.social-telegram-icon {
   width: 4.375rem;
   height: 3.375rem;
   position: absolute;
@@ -2377,18 +2371,18 @@ span {
   background-size: 114.2857% 148.1481%;
   background-position: -0.5rem -0.75rem;
   background-repeat: no-repeat;
-  background-image: url(../image/8e1a92168eefec5b6b3a7997eee327a55614ec04.png);
+  background-image: url(../image/social-telegram-icon.png);
 }
 
-.Pixso-vector-162_34 {
+.team-social-divider-line {
   position: absolute;
   inset: -1200% -4.3478260869565215% -1200% -4.3478260869565215% ;
-  background-image: url(../image/Vector_162_34.png);
+  background-image: url(../image/team-social-divider.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-.vector-wrapper-162_34 {
+.team-social-divider-wrapper {
   position: absolute;
   left: 50.1875rem;
   top: 54.875rem;
@@ -2396,7 +2390,7 @@ span {
   height: 0.125rem;
 }
 
-.Pixso-rectangle-162_28 {
+.video-placeholder {
   width: 55.25rem;
   height: 32.0625rem;
   position: absolute;
@@ -2406,7 +2400,7 @@ span {
   background-color: rgba(42, 42, 42, 1);
 }
 
-.Pixso-paragraph-162_29 {
+.video-placeholder-title {
   font-size: 2.625rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -2420,7 +2414,7 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-paragraph-162_33 {
+.team-title {
   font-size: 2.875rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -2434,15 +2428,16 @@ span {
   flex-grow: 0;
 }
 
-.Pixso-group-130_1776 {
+.site-header {
   width: 110.5625rem;
   height: 6.625rem;
-  position: absolute;
+  position: fixed;
   left: 3.1875rem;
   top: 0;
+  z-index: 1000;
 }
 
-.Pixso-rectangle-130_1777 {
+.site-header-logo-image {
   width: 6.3125rem;
   height: 6.625rem;
   position: absolute;
@@ -2451,10 +2446,10 @@ span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../image/46ad3fdcf2bd15b195d9e76bb3a84d88012de6f5.png);
+  background-image: url(../image/site-logo-tree.png);
 }
 
-.Pixso-paragraph-130_1778 {
+.site-header-logo-russian {
   font-size: 1.625rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -2468,7 +2463,7 @@ span {
   top: 2.125rem;
 }
 
-.Pixso-paragraph-130_1779 {
+.site-header-logo-trees {
   font-size: 1.625rem;
   font-family: "Montserrat-Regular";
   font-weight: 400;
@@ -2481,7 +2476,7 @@ span {
   top: 4.125rem;
 }
 
-.Pixso-group-130_1780 {
+.site-header-nav {
   width: 31.0625rem;
   height: 2.5rem;
   position: absolute;
@@ -2489,7 +2484,7 @@ span {
   top: 2.875rem;
 }
 
-.Pixso-paragraph-130_1781 {
+.site-header-home-link {
   font-size: 1.125rem;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -2501,7 +2496,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-130_1782 {
+.site-header-catalog-link {
   font-size: 1.125rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -2513,7 +2508,7 @@ span {
   top: 0;
 }
 
-.Pixso-paragraph-130_1784 {
+.site-header-news-link {
   font-size: 1.125rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -2526,7 +2521,7 @@ span {
   top: 0;
 }
 
-.Pixso-group-156_2 {
+.site-header-contact-button {
   width: 14.125rem;
   height: 3.75rem;
   position: absolute;
@@ -2534,14 +2529,14 @@ span {
   top: 2.875rem;
 }
 
-.Pixso-rectangle-156_3 {
+.site-header-contact-button-fill {
   width: 100%;
   height: 100%;
   position: relative;
   border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
 }
 
-.stroke-wrapper-156_3 {
+.site-header-contact-button-bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -2549,7 +2544,7 @@ span {
   height: 3.75rem;
 }
 
-.stroke-156_3 {
+.site-header-contact-button-stroke {
   position: absolute;
   inset: 0;
   border-radius: 2.1875rem 2.1875rem 2.1875rem 2.1875rem;
@@ -2560,7 +2555,7 @@ span {
   border-color: rgba(33, 205, 0, 1);
 }
 
-.Pixso-paragraph-156_4 {
+.site-header-contact-button-text {
   font-size: 1rem;
   font-family: "Montserrat-Medium";
   font-weight: 500;
@@ -2573,27 +2568,27 @@ span {
   top: 1.25rem;
 }
 
-.Pixso-vector-130_1788 {
+.site-header-active-link-line {
   width: 7rem;
   height: 0.1875rem;
-  background-image: url(../image/Vector_130_1788.png);
+  background-image: url(../image/header-active-link-line.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
   left: 44.375rem;
   top: 4.75rem;
-  transition: left 0.25s ease;
+  transition: left 0.32s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.Pixso-group-130_1776:has(.Pixso-paragraph-130_1781.is-active) .Pixso-vector-130_1788 {
+.site-header:has(.site-header-home-link.is-active) .site-header-active-link-line {
   left: 44.375rem;
 }
 
-.Pixso-group-130_1776:has(.Pixso-paragraph-130_1782.is-active) .Pixso-vector-130_1788 {
+.site-header:has(.site-header-catalog-link.is-active) .site-header-active-link-line {
   left: 54.6875rem;
 }
 
-.Pixso-group-130_1776:has(.Pixso-paragraph-130_1784.is-active) .Pixso-vector-130_1788 {
+.site-header:has(.site-header-news-link.is-active) .site-header-active-link-line {
   left: 63.8125rem;
 }
 
@@ -2647,17 +2642,17 @@ span {
 .social-icon-link {
   display: contents;
 }
-.Pixso-vector-141_79,
-.Pixso-vector-141_82,
-.Pixso-rectangle-141_80,
-.Pixso-rectangle-141_81 {
+.social-max-icon,
+.social-vk-icon,
+.social-dzen-icon,
+.social-telegram-icon {
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.Pixso-vector-141_79:hover,
-.Pixso-vector-141_82:hover,
-.Pixso-rectangle-141_80:hover,
-.Pixso-rectangle-141_81:hover {
+.social-max-icon:hover,
+.social-vk-icon:hover,
+.social-dzen-icon:hover,
+.social-telegram-icon:hover {
   opacity: 0.72;
   transform: scale(1.12);
 }
@@ -2749,9 +2744,9 @@ span {
   padding-bottom: 4rem;
 }
 
-.comment-editing .Pixso-group-141_68,
+.comment-editing .contact-person-type-section,
 .comment-editing .form-checkbox-wrapper,
-.comment-editing .Pixso-group-141_61 {
+.comment-editing .contact-form-submit-button {
   opacity: 0;
   pointer-events: none;
 }
@@ -2767,8 +2762,8 @@ span {
   z-index: 5;
   margin: 0;
 }
-.Pixso-group-162_14,
-.Pixso-group-162_13 {
+.contact-person-individual-option,
+.contact-person-company-option {
   cursor: pointer;
   transition: opacity 0.25s;
 }
@@ -2795,14 +2790,14 @@ span {
 }
 
 /* ===== BUTTON CURSORS ===== */
-.Pixso-group-156_2 { cursor: pointer; transition: opacity 0.25s; }
-.Pixso-group-156_2:hover { opacity: 0.8; }
-.Pixso-group-130_1790 { cursor: pointer; transition: opacity 0.25s; }
-.Pixso-group-130_1790:hover { opacity: 0.85; }
-.Pixso-group-141_61 { cursor: pointer; transition: opacity 0.2s; }
-.Pixso-group-141_61:hover { opacity: 0.85; }
-.Pixso-group-156_15 { cursor: pointer; transition: opacity 0.2s; }
-.Pixso-group-156_15:hover { opacity: 0.8; }
+.site-header-contact-button { cursor: pointer; transition: opacity 0.25s; }
+.site-header-contact-button:hover { opacity: 0.8; }
+.hero-catalog-button { cursor: pointer; transition: opacity 0.25s; }
+.hero-catalog-button:hover { opacity: 0.85; }
+.contact-form-submit-button { cursor: pointer; transition: opacity 0.2s; }
+.contact-form-submit-button:hover { opacity: 0.85; }
+.about-more-button { cursor: pointer; transition: opacity 0.2s; }
+.about-more-button:hover { opacity: 0.8; }
 
 /* ===== SCROLL ANIMATIONS ===== */
 .anim-fade-up {
@@ -2834,3 +2829,6 @@ span {
 .anim-counter.anim-visible {
   animation: countUp 0.9s ease forwards;
 }
+
+
+

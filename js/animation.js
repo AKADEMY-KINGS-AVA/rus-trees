@@ -23,8 +23,8 @@ function submitForm() {
   var agree  = document.getElementById('input-agree');
   var email  = document.getElementById('input-email');
   var comment = document.getElementById('input-comment');
-  var btn    = document.getElementById('141_61');
-  var btnTxt = btn ? btn.querySelector('.Pixso-paragraph-141_63') : null;
+  var btn    = document.getElementById('contact-form-submit-button');
+  var btnTxt = btn ? btn.querySelector('.contact-form-submit-text') : null;
 
   if (!name || !name.value.trim()) {
     shakeField(name); return;
@@ -48,7 +48,7 @@ function submitForm() {
     if (email) email.value = '';
     if (comment) comment.value = '';
     if (comment) comment.dispatchEvent(new Event('input'));
-    var formBlock = document.getElementById('141_51');
+    var formBlock = document.getElementById('contact-form-section');
     if (formBlock) formBlock.classList.remove('comment-editing');
     if (agree) agree.checked = false;
     document.querySelectorAll('input[name="person_type"]').forEach(function (radio) {
@@ -71,6 +71,59 @@ function shakeField(el) {
 
 /* в”Ђв”Ђ Р“Р»Р°РІРЅС‹Р№ init в”Ђв”Ђ */
 document.addEventListener('DOMContentLoaded', function () {
+
+  var siteHeader = document.querySelector('.site-header');
+  if (siteHeader) {
+    var navLine = siteHeader.querySelector('.site-header-active-link-line');
+    var navLinks = siteHeader.querySelectorAll('.header-nav-link');
+    var activeNavLink = siteHeader.querySelector('.header-nav-link.is-active') || navLinks[0];
+
+    function moveNavLineTo(link, instant) {
+      if (!navLine || !link) return;
+      var headerRect = siteHeader.getBoundingClientRect();
+      var linkRect = link.getBoundingClientRect();
+      var rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+      var nextLeft = linkRect.left - headerRect.left - rem * 0.5;
+
+      if (instant) navLine.style.transition = 'none';
+      navLine.style.left = nextLeft + 'px';
+      if (instant) {
+        navLine.offsetHeight;
+        navLine.style.transition = '';
+      }
+    }
+
+    moveNavLineTo(activeNavLink, true);
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('mouseenter', function () {
+        moveNavLineTo(link, false);
+      });
+
+      link.addEventListener('mouseleave', function () {
+        moveNavLineTo(activeNavLink, false);
+      });
+
+      link.addEventListener('click', function (event) {
+        var href = link.getAttribute('href');
+        if (!href || href.charAt(0) === '#') return;
+
+        event.preventDefault();
+        activeNavLink = link;
+        navLinks.forEach(function (item) { item.classList.remove('is-active'); });
+        link.classList.add('is-active');
+        moveNavLineTo(link, false);
+
+        setTimeout(function () {
+          window.location.href = href;
+        }, 260);
+      });
+    });
+
+    window.addEventListener('resize', function () {
+      moveNavLineTo(activeNavLink, true);
+    });
+  }
 
   /* в”Ђв”Ђ Scroll-Р°РЅРёРјР°С†РёРё (IntersectionObserver) в”Ђв”Ђ */
   var animEls = document.querySelectorAll(
@@ -107,13 +160,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* в”Ђв”Ђ Hero intro (РїРѕСЏРІР»РµРЅРёРµ С‚РµРєСЃС‚РѕРІ РїСЂРё Р·Р°РіСЂСѓР·РєРµ) в”Ђв”Ђ */
   var heroIds = [
-    '130_1774', // Р РЈРЎРЎРљРР•
-    '130_1773', // Р”Р•Р Р•Р’Р¬РЇ
-    '130_1775', // РћРџР«Рў. РљРђР§Р•РЎРўР’Рћ. Р’Р«Р“РћР”Рђ.
-    '130_1789', // Р»РёРЅРёСЏ
-    '130_1790', // РєРЅРѕРїРєР° РЎРњРћРўР Р•РўР¬ РљРђРўРђР›РћР“
-    '130_1794', // РєР°СЂС‚РѕС‡РєРё-РёРєРѕРЅРєРё
-    '130_1844', // РћРџРўРћР’Рћ Р›РћР“РРЎРўРР§Р•РЎРљРР™
+    'hero-title-russian', // Р РЈРЎРЎРљРР•
+    'hero-title-trees', // Р”Р•Р Р•Р’Р¬РЇ
+    'hero-subtitle-benefits', // РћРџР«Рў. РљРђР§Р•РЎРўР’Рћ. Р’Р«Р“РћР”Рђ.
+    'hero-short-divider', // Р»РёРЅРёСЏ
+    'hero-catalog-button', // РєРЅРѕРїРєР° РЎРњРћРўР Р•РўР¬ РљРђРўРђР›РћР“
+    'hero-advantage-cards', // РєР°СЂС‚РѕС‡РєРё-РёРєРѕРЅРєРё
+    'hero-company-description', // РћРџРўРћР’Рћ Р›РћР“РРЎРўРР§Р•РЎРљРР™
   ];
 
   heroIds.forEach(function (id, i) {
@@ -130,11 +183,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* в”Ђв”Ђ Р¤РѕРЅРѕРІРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ hero (fade-in) в”Ђв”Ђ */
   var heroCardIds = [
-    '130_1808',
-    '130_1802',
-    '130_1814',
-    '130_1796',
-    '130_1821'
+    'hero-choice-help-card-bg',
+    'hero-media-card-bg',
+    'hero-best-option-card-bg',
+    'hero-discount-card-bg',
+    'hero-deal-card-bg'
   ];
   var heroCards = heroCardIds
     .map(function (id) { return document.getElementById(id); })
@@ -165,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
     updateHeroCards();
     setInterval(updateHeroCards, 550);
   }
-  var heroBg = document.getElementById('162_66');
+  var heroBg = document.getElementById('hero-background-image');
   if (heroBg) {
     heroBg.style.opacity = '0';
     heroBg.style.transition = 'opacity 1.2s ease';
@@ -177,8 +230,8 @@ document.addEventListener('DOMContentLoaded', function () {
   /* в”Ђв”Ђ Р Р°РґРёРѕ-РєРЅРѕРїРєРё: РІРёР·СѓР°Р»СЊРЅРѕРµ РІС‹РґРµР»РµРЅРёРµ в”Ђв”Ђ */
   var radioFiz  = document.getElementById('radio-fiz');
   var radioYur  = document.getElementById('radio-yur');
-  var groupFiz  = document.getElementById('162_14');
-  var groupYur  = document.getElementById('162_13');
+  var groupFiz  = document.getElementById('contact-person-individual-option');
+  var groupYur  = document.getElementById('contact-person-company-option');
 
   function updateRadio() {
     if (radioFiz && radioFiz.checked) {
@@ -246,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (commentInput) {
     var commentParent = commentInput.parentElement;
     var commentClose = document.getElementById('comment-close');
-    var contactForm = document.getElementById('141_51');
+    var contactForm = document.getElementById('contact-form-section');
     var minCommentHeight = commentInput.offsetHeight || 77;
 
     function resizeComment() {
@@ -283,11 +336,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* в”Ђв”Ђ РџСѓР»СЊСЃР°С†РёСЏ РєРЅРѕРїРєРё В«РЎРњРћРўР Р•РўР¬ РљРђРўРђР›РћР“В» в”Ђв”Ђ */
-  var catalogBtn = document.getElementById('130_1790');
+  var catalogBtn = document.getElementById('hero-catalog-button');
   if (catalogBtn) {
     var pulse = true;
     setInterval(function () {
-      var sh1 = catalogBtn.querySelector('.shadow-blend-unknown-1');
+      var sh1 = catalogBtn.querySelector('.hero-catalog-button-outer-glow');
       if (!sh1) return;
       if (pulse) {
         sh1.style.transition = 'box-shadow 0.9s ease';
@@ -303,12 +356,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var scrollContainer = document.querySelector('.scroll-container');
   if (scrollContainer) {
     var sectionIds = [
-      '156_9',
-      '130_1845',
-      '130_1853',
-      '130_1856',
-      '141_133',
-      '162_33'
+      'experience-section',
+      'quality-section',
+      'about-section',
+      'about-title',
+      'social-links-section',
+      'team-title'
     ];
     var isSectionScrolling = false;
 
@@ -387,3 +440,9 @@ document.addEventListener('DOMContentLoaded', function () {
   ].join('');
   document.head.appendChild(style);
 })();
+
+
+
+
+
+
