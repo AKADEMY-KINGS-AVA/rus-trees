@@ -1745,7 +1745,7 @@ span {
 
 .experience-description {
   font-size: 2.1875rem;
-  font-family: "Inter-Regular";
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   white-space: pre-wrap;
@@ -2532,7 +2532,7 @@ span {
   height: 3.75rem;
   position: absolute;
   left: 96.4375rem;
-  top: 2.875rem;
+  top: 1.875rem;
   padding: 0;
   border: none;
   background: transparent;
